@@ -1,0 +1,22 @@
+<string-array name="giant_turtle">
+	<item>1235</item>
+	<item>0205</item>
+	<item>0335</item>
+	<item>0505</item>
+	<item>0635</item>
+	<item>0805</item>
+	<item>0935</item>
+	<item>1105</item>
+
+	<item>1235</item>
+	<item>0135</item>
+	<item>0235</item>
+	<item>0335</item>
+	<item>0435</item>
+	<item>0535</item>
+	<item>0635</item>
+	<item>0735</item>
+	<item>0835</item>
+	<item>0935</item>
+	<item>1105</item>
+</string-array>

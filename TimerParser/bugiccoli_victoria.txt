@@ -1,0 +1,27 @@
+<string-array name="bugiccoli_victoria">
+	<item>0025</item>
+	<item>0125</item>
+	<item>0225</item>
+	<item>0325</item>
+	<item>0425</item>
+	<item>0525</item>
+	<item>0625</item>
+	<item>0725</item>
+	<item>0825</item>
+	<item>0925</item>
+	<item>1025</item>
+	<item>1125</item>
+	<item>1225</item>
+	<item>1325</item>
+	<item>1425</item>
+	<item>1525</item>
+	<item>1625</item>
+	<item>1725</item>
+	<item>1825</item>
+	<item>1925</item>
+	<item>2025</item>
+	<item>2125</item>
+	<item>2225</item>
+	<item>2325</item>
+	<item>2425</item>
+</string-array>

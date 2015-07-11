@@ -1,0 +1,22 @@
+<string-array name="mark_alpha">
+	<item>1245</item>
+	<item>0215</item>
+	<item>0345</item>
+	<item>0515</item>
+	<item>0645</item>
+	<item>0815</item>
+	<item>0945</item>
+	<item>1115</item>
+
+	<item>1245</item>
+	<item>0145</item>
+	<item>0245</item>
+	<item>0345</item>
+	<item>0445</item>
+	<item>0545</item>
+	<item>0645</item>
+	<item>0745</item>
+	<item>0845</item>
+	<item>0945</item>
+	<item>1115</item>
+</string-array>

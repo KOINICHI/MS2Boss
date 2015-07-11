@@ -1,0 +1,24 @@
+baraha,Baraha the Gangster,24,Territory of Sir Andrea,Elite
+boogieccoli_maple,Boogieccoli,3,Boogieccoli Coast,Elite
+boogieccoli_victoria,Boogieccoli,3,Boogieccoli Cave,Elite
+chau_the_guard,Chau the Guard,12,Kerning Interchange,Elite
+devlin_chief,Devlin Chief,24,Northern Royal Road,Unknown
+devlin_warrior,Devlin Warrior,21,Northern Royal Road,Field Boss
+devorak,Devorak the Shadow Mage,30,Shadow Army Altar,Raid Boss
+dun_dun,Dun Dun,15,Kerning Waste Disposal Facility,Field Boss
+epie,Epie,13,Fairy Tree Lake,Elite
+frankenette,Frankenette,26,Research Center Basement,Elite
+giant_lavaeye,Giant Lavaeye,30,Lavaeye's Nest,Elite
+giant_turtle,Giant Turtle,18,Beach Way 111,Field Boss
+griffina,Griffina,30,Trinian Highway,Field Boss
+griffon,Griffon,23,Cold Heart,Field Boss
+hemokan,Hemokan,28,Bankorta,Raid Boss
+last_bajar,Last Bajar,30,Bischutai Mountain Top,Raid Boss
+madonette,Mad O Nette,17,Flora Avenue,Elite
+mark_alpha,Mark 52 Alpha,27,Neuron DNA Research Center,Field Boss
+mark_beta,Mark 52 Beta,30,Sunset Tower,Raid Boss
+mushmom,Mushmom,21,Someone Else's House,Elite
+nixie,Nixie,15,Fairy Tree Lake,Elite
+revenant_zombie,Revenant Zombie,22,Abandoned Charnel House,Elite
+urza,Urza,8,Twisted Canyon,Elite
+zirant,Dark Zirant,30,Todhara's Spring Water,Elite

@@ -1,0 +1,44 @@
+chau_the_keeper 1
+0 24 5 20 35 50
+baraha 3
+0 12 55
+13 22 25 55
+23 24 55
+nixie 3
+0 12 5
+13 22 5 35
+23 24 5
+zirant 3
+0 12 40
+13 22 10 40
+23 24 40
+revenant_zombie 3
+0 12 15
+13 22 15 45
+23 24 15
+madonette 3
+0 12 0
+13 22 0 30
+23 24 0
+mushmom 3
+0 12 40
+13 22 10 40
+23 24 40
+bugiccoli_victoria 1
+0 24 25
+bugiccoli_maple 1
+0 24 5 15 25 35 45 55
+epie 3
+0 12 5
+13 22 5 35
+23 24 5
+urza 1
+0 24 5 15 25 35 45 55
+giant_lavaeye 3
+0 12 5
+13 22 5 35
+23 24 5
+frankenette 3
+0 12 20
+13 22 20 50
+23 24 20
