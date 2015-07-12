@@ -1,6 +1,7 @@
 package kr.koinichi.ms2boss;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.util.Log;
 
@@ -13,35 +14,34 @@ import java.util.TimeZone;
  * Created by KOINICHI on 2015/07/10.
  */
 public class Boss {
+    public enum BossType {
+        ELITE, FIELD, RAID, UNKNOWN;
+    }
     public String name;
     public int level;
     public String location;
     public int icon;
-    public String type;
+    public BossType type;
 
-    String[] spawn_times;
+    public String[] spawn_times;
+    public int next_spawn_time_idx;
 
 
-    public Boss(int name, int level, int location, int icon, int time, String type, Context c) {
+    public Boss(int name, int level, int location, int icon, int time, int type) {
+        Context c = BossTimer.getContext();
         this.name = c.getString(name);
         this.level = level;
         this.location = c.getString(location);
         this.icon = icon;
         this.spawn_times = c.getResources().getStringArray(time);
-        this.type = type;
-        Log.d("KOINICHI", String.format("boss cstr %s", spawn_times[0]));
+
+        if (type == R.string.elite_boss) { this.type = BossType.ELITE; }
+        if (type == R.string.field_boss) { this.type = BossType.FIELD; }
+        if (type == R.string.raid_boss) { this.type = BossType.RAID; }
+        if (type == R.string.unknown_boss) { this.type = BossType.UNKNOWN; }
     }
 
-    public String getNextSpawnTime() {
-
-        if (type == "Unknown") {
-            return "Unknown";
-        }
-        if (type == "Raid Boss") {
-            return "Raid Boss";
-        }
-
-
+    public int updateNextSpawnTime() {
         TimeZone tz = TimeZone.getTimeZone("UTC");
         Calendar c = Calendar.getInstance(tz);
         c.add(Calendar.HOUR_OF_DAY, 9);
@@ -57,17 +57,43 @@ public class Boss {
                 break;
             }
         }
-
-        String next_time = spawn_times[idx % spawn_times.length];
-
-        StringBuilder sb = new StringBuilder();
-
-        sb.append(next_time.substring(0,2));
-        sb.append(":");
-        sb.append(next_time.substring(2));
-
-        return sb.toString();
-
+        next_spawn_time_idx = idx % spawn_times.length;
+        return next_spawn_time_idx;
     }
 
+    public String getNextSpawnTime() {
+        if (type == BossType.UNKNOWN) {
+            return "";
+        }
+        if (type == BossType.RAID) {
+            return "";
+        }
+
+        updateNextSpawnTime();
+        String next_time = spawn_times[next_spawn_time_idx];
+
+        return next_time;
+    }
+
+    public int getNextSpawnIn(int n)
+    {
+        if (type == BossType.UNKNOWN) {
+            return 0x7fffffff;
+        }
+        if (type == BossType.RAID) {
+            return 0x7fffffff;
+        }
+
+        TimeZone tz = TimeZone.getTimeZone("UTC");
+        Calendar c = Calendar.getInstance(tz);
+        c.add(Calendar.HOUR_OF_DAY, 9);
+
+        int idx = (updateNextSpawnTime() + n) % spawn_times.length;
+        String next_time = spawn_times[idx];
+
+        int ret = Integer.parseInt(next_time.substring(0,2)) * 60  + Integer.parseInt(next_time.substring(2,4))
+                    - (c.get(Calendar.HOUR_OF_DAY) * 60 + c.get(Calendar.MINUTE));
+        return ret;
+    }
 }
+

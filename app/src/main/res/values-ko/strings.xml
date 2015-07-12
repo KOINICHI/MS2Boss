@@ -2,13 +2,12 @@
 <resources>
     <string name="app_name">MS2 보스 타이머</string>
     <string name="action_settings">설정</string>
-    <string name="pref_disp_type">시간 형식</string>
-    <string name="pref_disp_type_sum">체크 하면 \'##분 후\'\n하지 않으면 \'##:##\'</string>
     
     <string name="field_boss">필드 보스</string>
     <string name="raid_boss">레이드 보스</string>
     <string name="elite_boss">엘리트</string>
     <string name="unknown_boss">알 수 없음</string>
+    <string name="minutes_later">분 후</string>
     
     <string name="baraha">깡패 바라하</string>
     <string name="baraha_loc">앙드레아 가문의 영지</string>
@@ -58,5 +57,6 @@
     <string name="urza_loc">굽이치는 협곡</string>
     <string name="zirant">다크 지란트</string>
     <string name="zirant_loc">토드하라의 샘물</string>
-    <string name="minutes_later">분 후</string>
+    <string name="pref_disp_type">시간 형식</string>
+    <string name="pref_disp_type_sum">체크 하면 \'##분 후\'\n하지 않으면 \'##:##\'</string>
 </resources>

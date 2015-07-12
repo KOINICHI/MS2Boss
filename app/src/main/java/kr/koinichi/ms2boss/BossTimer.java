@@ -1,6 +1,13 @@
 package kr.koinichi.ms2boss;
 
 import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.res.Resources;
+import android.os.Handler;
+import android.preference.Preference;
+import android.preference.PreferenceActivity;
+import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -10,116 +17,181 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.Timer;
+import java.util.TimerTask;
 
 
 public class BossTimer extends AppCompatActivity {
 
     ArrayList<Boss> bosses = null;
+    protected int disp_type = BossAdapter.SORT_BY_TIME;
+    private static Context ctx;
+
 
     private void initializeBossData() {
-        Context c = this.getApplicationContext();
-
         bosses = new ArrayList<Boss>();
-        bosses.add(new Boss(R.string.baraha, 23, R.string.baraha_loc, R.drawable.baraha, R.array.baraha, "Elite", c));
-        bosses.add(new Boss(R.string.boogieccoli_maple, 23, R.string.boogieccoli_maple_loc, R.drawable.boogieccoli_maple, R.array.boogieccoli_maple, "Elite", c));
-        bosses.add(new Boss(R.string.boogieccoli_victoria, 23, R.string.boogieccoli_victoria_loc, R.drawable.boogieccoli_victoria, R.array.boogieccoli_victoria, "Elite", c));
-        bosses.add(new Boss(R.string.chau_the_guard, 23, R.string.chau_the_guard_loc, R.drawable.chau_the_guard, R.array.chau_the_guard, "Elite", c));
-        bosses.add(new Boss(R.string.devlin_chief, 23, R.string.devlin_chief_loc, R.drawable.devlin_chief, R.array.devlin_chief, "Unknown", c));
-        bosses.add(new Boss(R.string.devlin_warrior, 23, R.string.devlin_warrior_loc, R.drawable.devlin_warrior, R.array.devlin_warrior, "Field Boss", c));
-        bosses.add(new Boss(R.string.devorak, 23, R.string.devorak_loc, R.drawable.devorak, R.array.devorak, "Raid Boss", c));
-        bosses.add(new Boss(R.string.dun_dun, 23, R.string.dun_dun_loc, R.drawable.dun_dun, R.array.dun_dun, "Field Boss", c));
-        bosses.add(new Boss(R.string.epie, 23, R.string.epie_loc, R.drawable.epie, R.array.epie, "Elite", c));
-        bosses.add(new Boss(R.string.frankenette, 23, R.string.frankenette_loc, R.drawable.frankenette, R.array.frankenette, "Elite", c));
-        bosses.add(new Boss(R.string.giant_lavaeye, 23, R.string.giant_lavaeye_loc, R.drawable.giant_lavaeye, R.array.giant_lavaeye, "Elite", c));
-        bosses.add(new Boss(R.string.giant_turtle, 23, R.string.giant_turtle_loc, R.drawable.giant_turtle, R.array.giant_turtle, "Field Boss", c));
-        bosses.add(new Boss(R.string.griffina, 23, R.string.griffina_loc, R.drawable.griffina, R.array.griffina, "Field Boss", c));
-        bosses.add(new Boss(R.string.griffon, 23, R.string.griffon_loc, R.drawable.griffon, R.array.griffon, "Field Boss", c));
-        bosses.add(new Boss(R.string.hemokan, 23, R.string.hemokan_loc, R.drawable.hemokan, R.array.hemokan, "Raid Boss", c));
-        bosses.add(new Boss(R.string.last_bajar, 23, R.string.last_bajar_loc, R.drawable.last_bajar, R.array.last_bajar, "Raid Boss", c));
-        bosses.add(new Boss(R.string.madonette, 23, R.string.madonette_loc, R.drawable.madonette, R.array.madonette, "Elite", c));
-        bosses.add(new Boss(R.string.mark_alpha, 23, R.string.mark_alpha_loc, R.drawable.mark_alpha, R.array.mark_alpha, "Field Boss", c));
-        bosses.add(new Boss(R.string.mark_beta, 23, R.string.mark_beta_loc, R.drawable.mark_beta, R.array.mark_beta, "Raid Boss", c));
-        bosses.add(new Boss(R.string.mushmom, 23, R.string.mushmom_loc, R.drawable.mushmom, R.array.mushmom, "Elite", c));
-        bosses.add(new Boss(R.string.nixie, 23, R.string.nixie_loc, R.drawable.nixie, R.array.nixie, "Elite", c));
-        bosses.add(new Boss(R.string.revenant_zombie, 23, R.string.revenant_zombie_loc, R.drawable.revenant_zombie, R.array.revenant_zombie, "Elite", c));
-        bosses.add(new Boss(R.string.urza, 23, R.string.urza_loc, R.drawable.urza, R.array.urza, "Elite", c));
-        bosses.add(new Boss(R.string.zirant, 23, R.string.zirant_loc, R.drawable.zirant, R.array.zirant, "Elite", c));
-
-
+        bosses.add(new Boss(R.string.baraha, 24, R.string.baraha_loc, R.drawable.baraha, R.array.baraha, R.string.elite_boss));
+        bosses.add(new Boss(R.string.boogieccoli_maple, 3, R.string.boogieccoli_maple_loc, R.drawable.boogieccoli_maple, R.array.boogieccoli_maple, R.string.elite_boss));
+        bosses.add(new Boss(R.string.boogieccoli_victoria, 3, R.string.boogieccoli_victoria_loc, R.drawable.boogieccoli_victoria, R.array.boogieccoli_victoria, R.string.elite_boss));
+        bosses.add(new Boss(R.string.chau_the_guard, 12, R.string.chau_the_guard_loc, R.drawable.chau_the_guard, R.array.chau_the_guard, R.string.elite_boss));
+        bosses.add(new Boss(R.string.devlin_chief, 24, R.string.devlin_chief_loc, R.drawable.devlin_chief, R.array.devlin_chief, R.string.unknown_boss));
+        bosses.add(new Boss(R.string.devlin_warrior, 21, R.string.devlin_warrior_loc, R.drawable.devlin_warrior, R.array.devlin_warrior, R.string.field_boss));
+        bosses.add(new Boss(R.string.devorak, 30, R.string.devorak_loc, R.drawable.devorak, R.array.devorak, R.string.raid_boss));
+        bosses.add(new Boss(R.string.dun_dun, 15, R.string.dun_dun_loc, R.drawable.dun_dun, R.array.dun_dun, R.string.field_boss));
+        bosses.add(new Boss(R.string.epie, 13, R.string.epie_loc, R.drawable.epie, R.array.epie, R.string.elite_boss));
+        bosses.add(new Boss(R.string.frankenette, 26, R.string.frankenette_loc, R.drawable.frankenette, R.array.frankenette, R.string.elite_boss));
+        bosses.add(new Boss(R.string.giant_lavaeye, 30, R.string.giant_lavaeye_loc, R.drawable.giant_lavaeye, R.array.giant_lavaeye, R.string.elite_boss));
+        bosses.add(new Boss(R.string.giant_turtle, 18, R.string.giant_turtle_loc, R.drawable.giant_turtle, R.array.giant_turtle, R.string.field_boss));
+        bosses.add(new Boss(R.string.griffina, 30, R.string.griffina_loc, R.drawable.griffina, R.array.griffina, R.string.field_boss));
+        bosses.add(new Boss(R.string.griffon, 23, R.string.griffon_loc, R.drawable.griffon, R.array.griffon, R.string.field_boss));
+        bosses.add(new Boss(R.string.hemokan, 28, R.string.hemokan_loc, R.drawable.hemokan, R.array.hemokan, R.string.raid_boss));
+        bosses.add(new Boss(R.string.last_bajar, 30, R.string.last_bajar_loc, R.drawable.last_bajar, R.array.last_bajar, R.string.raid_boss));
+        bosses.add(new Boss(R.string.madonette, 17, R.string.madonette_loc, R.drawable.madonette, R.array.madonette, R.string.elite_boss));
+        bosses.add(new Boss(R.string.mark_alpha, 27, R.string.mark_alpha_loc, R.drawable.mark_alpha, R.array.mark_alpha, R.string.field_boss));
+        bosses.add(new Boss(R.string.mark_beta, 30, R.string.mark_beta_loc, R.drawable.mark_beta, R.array.mark_beta, R.string.raid_boss));
+        bosses.add(new Boss(R.string.mushmom, 21, R.string.mushmom_loc, R.drawable.mushmom, R.array.mushmom, R.string.elite_boss));
+        bosses.add(new Boss(R.string.nixie, 15, R.string.nixie_loc, R.drawable.nixie, R.array.nixie, R.string.elite_boss));
+        bosses.add(new Boss(R.string.revenant_zombie, 22, R.string.revenant_zombie_loc, R.drawable.revenant_zombie, R.array.revenant_zombie, R.string.elite_boss));
+        bosses.add(new Boss(R.string.urza, 8, R.string.urza_loc, R.drawable.urza, R.array.urza, R.string.elite_boss));
+        bosses.add(new Boss(R.string.zirant, 30, R.string.zirant_loc, R.drawable.zirant, R.array.zirant, R.string.elite_boss));
     }
 
     public class BossAdapter extends BaseAdapter {
-        ArrayList<Boss> boss_list = bosses;
+        public ArrayList<SimpleBoss> boss_list;
+        public static final int SORT_BY_BOSS = 0;
+        public static final int SORT_BY_TIME = 1;
+        public static final int MAX_DISP = 50;
+
+        public BossAdapter(int dispType) {
+            boss_list = new ArrayList<SimpleBoss>();
+            updateBossList(dispType);
+        }
+
+        public void updateBossList(int dispType) {
+            boss_list.clear();
+            if (dispType == SORT_BY_BOSS) { sortByBoss(); }
+            if (dispType == SORT_BY_TIME) { sortByTime(); }
+        }
+
+
+        private void sortByBoss() {
+            int size = bosses.size();
+            for (int i=0; i<size; i++) {
+                Boss boss = bosses.get(i);
+                boss_list.add(new SimpleBoss(boss.name, boss.location, boss.getNextSpawnTime(), boss.icon));
+            }
+        }
+        private void sortByTime() {
+            int size = bosses.size();
+            int count = 0;
+            int[] idx = new int[size];
+            for (int i=0; i<size; i++) {
+                idx[i] = 0;
+            }
+
+            while (count < MAX_DISP) {
+                int min_v = 0x7fffffff, min_i = 0;
+                for (int i=0; i<size; i++) {
+                    int time = bosses.get(i).getNextSpawnIn(idx[i]);
+                    if (min_v > time) {
+                        min_v = time;
+                        min_i = i;
+                    }
+                }
+
+                Boss boss = bosses.get(min_i);
+                boss_list.add(new SimpleBoss(boss.name, boss.location, String.format("%d", min_v), boss.icon));
+
+                idx[min_i]++;
+                count++;
+            }
+        }
+
 
         @Override
         public int getCount() {
-            Log.d("KOINICHI", String.format("count %d", boss_list.size()));
             return boss_list.size();
         }
 
         @Override
-        public Boss getItem(int idx) {
-            Log.d("KOINICHI", "name " + boss_list.get(idx).name);
+        public SimpleBoss getItem(int idx) {
             return boss_list.get(idx);
         }
 
         @Override
         public long getItemId(int id) {
-            Log.d("KOINICHI", String.format("id %d", id));
             return id;
         }
 
         @Override
         public View getView(int id, View view, ViewGroup viewgroup) {
-            Log.d("KOINICHI", String.format("view %d", id));
             if (view == null) {
                 view = LayoutInflater.from(getApplicationContext()).inflate(R.layout.listitem, viewgroup, false);
             }
-            Log.d("KOINICHI", String.format("view 1111"));
 
             ImageView boss_icon = (ImageView) view.findViewById(R.id.boss_icon);
             TextView boss_name = (TextView) view.findViewById(R.id.boss_name);
             TextView boss_time = (TextView) view.findViewById(R.id.boss_time);
-            Log.d("KOINICHI", String.format("view 2222"));
 
-            Boss boss = bosses.get(id);
-            Log.d("KOINICHI", String.format("view 3333 " + boss.name));
+            SimpleBoss boss = boss_list.get(id);
 
             boss_name.setText(boss.name);
-            StringBuilder sb = new StringBuilder();
-            sb.append(boss.getNextSpawnTime());
-            sb.append(" at ");
-            sb.append(boss.location);
-            boss_time.setText(sb.toString());
+            boss_time.setText(boss.getTimeLocString(disp_type));
             boss_icon.setImageResource(boss.icon);
 
-            Log.d("KOINICHI", boss.name);
 
             return view;
         }
     }
 
 
+    BossAdapter bossAdapter = null;
+    private void displayAdapter(){
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+        Boolean b = sp.getBoolean("pref_disp_type", true);
+        if (bossAdapter == null || (disp_type != (b ? BossAdapter.SORT_BY_TIME : BossAdapter.SORT_BY_BOSS))) {
+            disp_type = b ? BossAdapter.SORT_BY_TIME : BossAdapter.SORT_BY_BOSS;
+            bossAdapter = new BossAdapter(disp_type);
+
+            ListView listView = (ListView) findViewById(R.id.boss_list);
+            listView.setAdapter(bossAdapter);
+        }
+        else {
+            bossAdapter.updateBossList(disp_type);
+            bossAdapter.notifyDataSetChanged();
+        }
+    }
+
+
+    final Handler handler = new Handler();
+    private void createDispTypeTimer() {
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                displayAdapter();
+                handler.postDelayed(this, 5 * 1000);
+            }
+        }, 5 * 1000);
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        ctx = getApplicationContext();
         initializeBossData();
-
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_boss_timer);
 
-        BossAdapter bossAdapter = new BossAdapter();
-
-        ListView listView = (ListView) findViewById(R.id.boss_list);
-        listView.setAdapter(bossAdapter);
+        createDispTypeTimer();
+        displayAdapter();
     }
 
     @Override
@@ -138,9 +210,16 @@ public class BossTimer extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            Intent i = new Intent(this, SettingActivity.class);
+            startActivity(i);
             return true;
         }
 
         return super.onOptionsItemSelected(item);
     }
+
+    public static Context getContext() {
+        return ctx;
+    }
+
 }
