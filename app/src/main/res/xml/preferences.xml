@@ -5,4 +5,15 @@
         android:title="@string/pref_disp_type"
         android:summary="@string/pref_disp_type_sum"
         android:defaultValue="false" />
+    <CheckBoxPreference
+        android:key="pref_noti_flag"
+        android:title="@string/pref_noti_flag"
+        android:defaultValue="false" />
+    <EditTextPreference
+        android:key="pref_noti_delay"
+        android:title="@string/pref_noti_delay"
+        android:summary=""
+        android:inputType="numberDecimal"
+        android:defaultValue="15"
+        android:enabled="false" />
 </PreferenceScreen>

@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">MS2 Boss Timer</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="field_boss">Field Boss</string>
+    <string name="raid_boss">Raid Boss</string>
+    <string name="elite_boss">Elite</string>
+    <string name="unknown_boss">Unknown</string>
+    <string name="minutes_later">" mins later"</string>
+
+    <string name="baraha">Baraha the Gangster</string>
+    <string name="baraha_loc">Territory of Sir Andrea</string>
+    <string name="boogieccoli_maple">Boogieccoli</string>
+    <string name="boogieccoli_maple_loc">Boogieccoli Coast</string>
+    <string name="boogieccoli_victoria">Boogieccoli</string>
+    <string name="boogieccoli_victoria_loc">Boogieccoli Cave</string>
+    <string name="chau_the_guard">Chau the Guard</string>
+    <string name="chau_the_guard_loc">Kerning Interchange</string>
+    <string name="devlin_chief">Devlin Chief</string>
+    <string name="devlin_chief_loc">Northern Royal Road</string>
+    <string name="devlin_warrior">Devlin Warrior</string>
+    <string name="devlin_warrior_loc">Northern Royal Road</string>
+    <string name="devorak">Devorak the Shadow Mage</string>
+    <string name="devorak_loc">Shadow Army Altar</string>
+    <string name="dun_dun">Dun Dun</string>
+    <string name="dun_dun_loc">Kerning Waste Disposal Facility</string>
+    <string name="epie">Epie</string>
+    <string name="epie_loc">Fairy Tree Lake</string>
+    <string name="frankenette">Frankenette</string>
+    <string name="frankenette_loc">Research Center Basement</string>
+    <string name="giant_lavaeye">Giant Lavaeye</string>
+    <string name="giant_lavaeye_loc">Lavaeye\'s Nest</string>
+    <string name="giant_turtle">Giant Turtle</string>
+    <string name="giant_turtle_loc">Beach Way 111</string>
+    <string name="griffina">Griffina</string>
+    <string name="griffina_loc">Trinian Highway</string>
+    <string name="griffon">Griffon</string>
+    <string name="griffon_loc">Cold Heart</string>
+    <string name="hemokan">Hemokan</string>
+    <string name="hemokan_loc">Bankorta</string>
+    <string name="last_bajar">Last Bajar</string>
+    <string name="last_bajar_loc">Bischutai Mountain Top</string>
+    <string name="madonette">Mad O Nette</string>
+    <string name="madonette_loc">Flora Avenue</string>
+    <string name="mark_alpha">Mark 52 Alpha</string>
+    <string name="mark_alpha_loc">Neuron DNA Research Center</string>
+    <string name="mark_beta">Mark 52 Beta</string>
+    <string name="mark_beta_loc">Sunset Tower</string>
+    <string name="mushmom">Mushmom</string>
+    <string name="mushmom_loc">Someone Else\'s House</string>
+    <string name="nixie">Nixie</string>
+    <string name="nixie_loc">Fairy Tree Lake</string>
+    <string name="revenant_zombie">Revenant Zombie</string>
+    <string name="revenant_zombie_loc">Abandoned Charnel House</string>
+    <string name="urza">Urza</string>
+    <string name="urza_loc">Twisted Canyon</string>
+    <string name="zirant">Dark Zirant</string>
+    <string name="zirant_loc">Todhara\'s Spring Water</string>
+    <string name="pref_disp_type">Time Display Option</string>
+    <string name="pref_disp_type_sum">\'## mins later\' if chekced\n \'##:##\' if not</string>
+    <string name="pref_noti_delay">Notification Setting</string>
+    <string name="pref_noti_delay_sum">minutes before</string>
+    <string name="noti_message">, the following bosses will appear :</string>
+    <string name="minutes_before">" mins before"</string>
+    <string name="noti_title">Boss Alert</string>
+
+
+</resources>

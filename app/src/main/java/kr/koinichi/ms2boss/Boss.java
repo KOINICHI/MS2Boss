@@ -26,6 +26,9 @@ public class Boss {
     public String[] spawn_times;
     public int next_spawn_time_idx;
 
+    public Boolean notify_flag;
+    private int notified_already;
+
 
     public Boss(int name, int level, int location, int icon, int time, int type) {
         Context c = BossTimer.getContext();
@@ -39,6 +42,9 @@ public class Boss {
         if (type == R.string.field_boss) { this.type = BossType.FIELD; }
         if (type == R.string.raid_boss) { this.type = BossType.RAID; }
         if (type == R.string.unknown_boss) { this.type = BossType.UNKNOWN; }
+
+        notified_already = 0;
+        notify_flag = false;
     }
 
     public int updateNextSpawnTime() {
@@ -95,5 +101,23 @@ public class Boss {
                     - (c.get(Calendar.HOUR_OF_DAY) * 60 + c.get(Calendar.MINUTE));
         return ret;
     }
+
+    public boolean notifyNow(int delay)
+    {
+        if (!notify_flag) {
+            return false;
+        }
+        if (notified_already > 0) {
+            notified_already--;
+            return false;
+        }
+        int time_left = getNextSpawnIn(0);
+        if (delay == time_left) {
+            notified_already = 70;
+            return true;
+        }
+        return false;
+    }
+
 }
 

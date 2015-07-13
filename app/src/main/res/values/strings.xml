@@ -2,8 +2,17 @@
 <resources>
     <string name="app_name">MS2 보스 타이머</string>
     <string name="action_settings">설정</string>
+
     <string name="pref_disp_type">시간 형식</string>
     <string name="pref_disp_type_sum">체크 하면 \'##분 후\'\n하지 않으면 \'##:##\'</string>
+    <string name="minutes_later">분 후</string>
+    <string name="minutes_before">분 전</string>
+    <string name="pref_noti_flag">알림 켜기</string>
+    <string name="pref_noti_delay">미리 알림 설정</string>
+    <string name="pref_noti_delay_sum">분 전 알림</string>
+    <string name="noti_title">보스 알림</string>
+
+    <string name="noti_message">에 보스 몬스터가 출현합니다 :</string>
     
     <string name="field_boss">필드 보스</string>
     <string name="raid_boss">레이드 보스</string>
@@ -58,5 +67,4 @@
     <string name="urza_loc">굽이치는 협곡</string>
     <string name="zirant">다크 지란트</string>
     <string name="zirant_loc">토드하라의 샘물</string>
-    <string name="minutes_later">분 후</string>
 </resources>

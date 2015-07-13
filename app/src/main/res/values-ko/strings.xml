@@ -59,4 +59,9 @@
     <string name="zirant_loc">토드하라의 샘물</string>
     <string name="pref_disp_type">시간 형식</string>
     <string name="pref_disp_type_sum">체크 하면 \'##분 후\'\n하지 않으면 \'##:##\'</string>
+    <string name="pref_noti_delay">미리 알림 설정</string>
+    <string name="pref_noti_delay_sum">분 전 알림</string>
+    <string name="noti_message">에 출현하는 보스 몬스터 :</string>
+    <string name="minutes_before">분 전</string>
+    <string name="noti_title">보스 알림</string>
 </resources>
