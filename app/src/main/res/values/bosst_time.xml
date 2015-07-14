@@ -36,7 +36,6 @@
         <item>1915</item>
         <item>2015</item>
         <item>2115</item>
-        <item>2245</item>
     </string-array>
 
     <string-array name="griffina">
@@ -83,6 +82,7 @@
         <item>2055</item>
         <item>2155</item>
         <item>2225</item>
+        <item>2325</item>
     </string-array>
 
     <string-array name="devlin_chief">
@@ -255,10 +255,6 @@
         <item>2320</item>
         <item>2335</item>
         <item>2350</item>
-        <item>2405</item>
-        <item>2420</item>
-        <item>2435</item>
-        <item>2450</item>
     </string-array>
 
     <string-array name="baraha">
@@ -296,7 +292,6 @@
         <item>2225</item>
         <item>2255</item>
         <item>2355</item>
-        <item>2455</item>
     </string-array>
 
     <string-array name="nixie">
@@ -334,7 +329,6 @@
         <item>2205</item>
         <item>2235</item>
         <item>2305</item>
-        <item>2405</item>
     </string-array>
 
     <string-array name="zirant">
@@ -372,7 +366,6 @@
         <item>2210</item>
         <item>2240</item>
         <item>2340</item>
-        <item>2440</item>
     </string-array>
 
     <string-array name="revenant_zombie">
@@ -410,7 +403,6 @@
         <item>2215</item>
         <item>2245</item>
         <item>2315</item>
-        <item>2415</item>
     </string-array>
 
     <string-array name="madonette">
@@ -448,7 +440,6 @@
         <item>2200</item>
         <item>2230</item>
         <item>2330</item>
-        <item>2430</item>
     </string-array>
 
     <string-array name="mushmom">
@@ -486,7 +477,6 @@
         <item>2210</item>
         <item>2240</item>
         <item>2340</item>
-        <item>2440</item>
     </string-array>
 
     <string-array name="boogieccoli_victoria">
@@ -514,7 +504,6 @@
         <item>2125</item>
         <item>2225</item>
         <item>2325</item>
-        <item>2425</item>
     </string-array>
 
     <string-array name="boogieccoli_maple">
@@ -662,12 +651,6 @@
         <item>2335</item>
         <item>2345</item>
         <item>2355</item>
-        <item>2405</item>
-        <item>2415</item>
-        <item>2425</item>
-        <item>2435</item>
-        <item>2445</item>
-        <item>2455</item>
     </string-array>
 
     <string-array name="epie">
@@ -705,7 +688,6 @@
         <item>2205</item>
         <item>2235</item>
         <item>2305</item>
-        <item>2405</item>
     </string-array>
 
     <string-array name="urza">
@@ -853,12 +835,6 @@
         <item>2335</item>
         <item>2345</item>
         <item>2355</item>
-        <item>2405</item>
-        <item>2415</item>
-        <item>2425</item>
-        <item>2435</item>
-        <item>2445</item>
-        <item>2455</item>
     </string-array>
 
     <string-array name="giant_lavaeye">
@@ -896,7 +872,6 @@
         <item>2205</item>
         <item>2235</item>
         <item>2305</item>
-        <item>2405</item>
     </string-array>
 
     <string-array name="frankenette">
@@ -934,7 +909,6 @@
         <item>2220</item>
         <item>2250</item>
         <item>2320</item>
-        <item>2420</item>
     </string-array>
 
 

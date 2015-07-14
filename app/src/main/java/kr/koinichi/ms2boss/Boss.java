@@ -38,6 +38,7 @@ public class Boss {
         this.icon = icon;
         this.spawn_times = c.getResources().getStringArray(time);
 
+
         if (type == R.string.elite_boss) { this.type = BossType.ELITE; }
         if (type == R.string.field_boss) { this.type = BossType.FIELD; }
         if (type == R.string.raid_boss) { this.type = BossType.RAID; }
@@ -100,6 +101,9 @@ public class Boss {
 
         int ret = Integer.parseInt(next_time.substring(0,2)) * 60  + Integer.parseInt(next_time.substring(2,4))
                     - (c.get(Calendar.HOUR_OF_DAY) * 60 + c.get(Calendar.MINUTE));
+        if (ret < 0) {
+            ret += 24 * 60;
+        }
         return ret;
     }
 
