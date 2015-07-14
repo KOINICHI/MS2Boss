@@ -8,6 +8,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Handler;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
@@ -36,8 +38,8 @@ import java.util.TimerTask;
 
 public class BossTimer extends AppCompatActivity {
 
-    ArrayList<Boss> bosses = null;
-    protected int disp_type = BossAdapter.SORT_BY_TIME;
+    public static ArrayList<Boss> bosses = null;
+    public static int disp_type = BossAdapter.SORT_BY_TIME;
     public static int noti_before = 15;
     public static Context ctx;
 
@@ -70,7 +72,7 @@ public class BossTimer extends AppCompatActivity {
         bosses.add(new Boss(R.string.zirant, 30, R.string.zirant_loc, R.drawable.zirant, R.array.zirant, R.string.elite_boss));
     }
 
-    public class BossAdapter extends BaseAdapter {
+    public static class BossAdapter extends BaseAdapter {
         public ArrayList<SimpleBoss> boss_list;
         public static final int SORT_BY_BOSS = 0;
         public static final int SORT_BY_TIME = 1;
@@ -145,17 +147,21 @@ public class BossTimer extends AppCompatActivity {
         @Override
         public View getView(int id, View view, ViewGroup viewgroup) {
             if (view == null) {
-                view = LayoutInflater.from(getApplicationContext()).inflate(R.layout.listitem, viewgroup, false);
+                view = LayoutInflater.from(getContext()).inflate(R.layout.listitem, viewgroup, false);
             }
 
             ImageView boss_icon = (ImageView) view.findViewById(R.id.boss_icon);
             TextView boss_name = (TextView) view.findViewById(R.id.boss_name);
             TextView boss_time = (TextView) view.findViewById(R.id.boss_time);
+            TextView boss_loc = (TextView) view.findViewById(R.id.boss_loc);
 
             SimpleBoss boss = boss_list.get(id);
 
             boss_name.setText(boss.name);
-            boss_time.setText(boss.getTimeLocString(disp_type));
+            boss_time.setText(boss.getTimeString(disp_type));
+            boss_time.setTextColor(boss.text_color);
+            boss_time.setTypeface(null, boss.text_style);
+            boss_loc.setText(boss.location);
             boss_icon.setImageResource(boss.icon);
 
 

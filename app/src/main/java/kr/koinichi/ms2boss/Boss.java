@@ -55,9 +55,10 @@ public class Boss {
         int c_time = c.get(Calendar.HOUR_OF_DAY) * 60 + c.get(Calendar.MINUTE);
         int idx = 0;
 
-        for (int i=0; i<=spawn_times.length; i++) {
+        for (int i=0; i<spawn_times.length; i++) {
+            int _i = (i+1) % spawn_times.length;
             int p_time = Integer.parseInt(spawn_times[i].substring(0,2)) * 60 + Integer.parseInt(spawn_times[i].substring(2,4));
-            int n_time = Integer.parseInt(spawn_times[(i+1)%spawn_times.length].substring(0,2)) * 60 + Integer.parseInt(spawn_times[(i+1)%spawn_times.length].substring(2,4));
+            int n_time = Integer.parseInt(spawn_times[_i].substring(0,2)) * 60 + Integer.parseInt(spawn_times[_i].substring(2,4));
             if (p_time <= c_time && c_time < n_time) {
                 idx = i+1;
                 break;
