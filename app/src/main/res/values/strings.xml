@@ -7,6 +7,8 @@
     <string name="pref_disp_type_sum">체크 하면 \'##분 후\'\n하지 않으면 \'##:##\'</string>
     <string name="minutes_later">분 후</string>
     <string name="minutes_before">분 전</string>
+    <string name="am">오전</string>
+    <string name="pm">오후</string>
     <string name="pref_noti_flag">알림 켜기</string>
     <string name="pref_noti_delay">미리 알림 설정</string>
     <string name="pref_noti_delay_sum">분 전 알림</string>

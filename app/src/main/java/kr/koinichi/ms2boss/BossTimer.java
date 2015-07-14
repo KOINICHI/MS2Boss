@@ -98,7 +98,7 @@ public class BossTimer extends AppCompatActivity {
             int size = bosses.size();
             for (int i = 0; i < size; i++) {
                 Boss boss = bosses.get(i);
-                boss_list.add(new SimpleBoss(boss.name, boss.location, boss.getNextSpawnTime(), boss.icon));
+                boss_list.add(new SimpleBoss(boss.name, boss.location, boss.getNextSpawnTime(), boss.getNextSpawnIn(0), boss.icon));
             }
         }
 
@@ -121,7 +121,7 @@ public class BossTimer extends AppCompatActivity {
                 }
 
                 Boss boss = bosses.get(min_i);
-                boss_list.add(new SimpleBoss(boss.name, boss.location, String.format("%d", min_v), boss.icon));
+                boss_list.add(new SimpleBoss(boss.name, boss.location, boss.getNextSpawnTime(), min_v, boss.icon));
 
                 idx[min_i]++;
                 count++;
