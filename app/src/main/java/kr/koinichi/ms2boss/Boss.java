@@ -56,12 +56,20 @@ public class Boss {
         return Integer.parseInt(time.substring(0, 2)) * 60 + Integer.parseInt(time.substring(2,4));
     }
 
-
-    public void updateNextSpawnTime() {
+    private Calendar getCurrentTime()
+    {
         TimeZone tz = TimeZone.getTimeZone("UTC");
         Calendar c = Calendar.getInstance(tz);
         c.add(Calendar.HOUR_OF_DAY, 9);
+        //c.add(Calendar.MINUTE, -1);
+        return c;
+    }
 
+
+
+    public void updateNextSpawnTime() {
+
+        Calendar c = getCurrentTime();
         int c_time = c.get(Calendar.HOUR_OF_DAY) * 60 + c.get(Calendar.MINUTE);
         int idx = 0;
 
@@ -73,7 +81,7 @@ public class Boss {
             if (j == 0) {
                 n_time += 24*60;
             }
-            if (p_time <= c_time && c_time < n_time) {
+            if (p_time < c_time && c_time <= n_time) {
                 idx = i;
                 break;
             }
@@ -98,16 +106,11 @@ public class Boss {
 
     public int getNextSpawnIn(int n)
     {
-        if (type == BossType.UNKNOWN) {
-            return 0x7fffffff;
-        }
-        if (type == BossType.RAID) {
+        if (!(type == BossType.ELITE || type == BossType.FIELD)) {
             return 0x7fffffff;
         }
 
-        TimeZone tz = TimeZone.getTimeZone("UTC");
-        Calendar c = Calendar.getInstance(tz);
-        c.add(Calendar.HOUR_OF_DAY, 9);
+        Calendar c = getCurrentTime();
 
         int c_time = c.get(Calendar.HOUR_OF_DAY) * 60 + c.get(Calendar.MINUTE);
         int n_time = 0;
@@ -115,7 +118,7 @@ public class Boss {
         int size = spawn_times.size();
         int idx = next_spawn_time_idx + n;
         if (0 <= idx && idx < size) {
-            ;
+            n_time = 0;
         }
         if (idx < 0) {
             n_time = -24*60;

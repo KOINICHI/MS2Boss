@@ -111,20 +111,33 @@ public class BossTimer extends AppCompatActivity {
             int count = 0;
             int[] idx = new int[size];
             for (int i = 0; i < size; i++) {
-                idx[i] = 0;
+                idx[i] = 1;
             }
 
-            while (count < MAX_DISP) {
+
+            for (int i=0; i<size; i++) {
+                Boss boss = bosses.get(i);
+                if (!boss.show_flag) {
+                    continue;
+                }
+                int time = boss.getNextSpawnIn(0);
+                if (-5 <= time && time < 0) {
+                    boss_list.add(new SimpleBoss(boss.name, boss.location, boss.getNextSpawnTime(), time, boss.icon));
+                    count++;
+                    if (count > MAX_DISP) {
+                        break;
+                    }
+                }
+
+            }
+
+            while (count <= MAX_DISP) {
                 int min_v = 0x7fffffff, min_i = -1;
-                for (int i = 0; i < size; i++) {
+                for (int i=0; i<size; i++) {
                     if (!bosses.get(i).show_flag) {
                         continue;
                     }
                     int time = bosses.get(i).getNextSpawnIn(idx[i]);
-                    if (time < -5) {
-                        idx[i]++;
-                        continue;
-                    }
                     if (min_v > time) {
                         min_v = time;
                         min_i = i;
