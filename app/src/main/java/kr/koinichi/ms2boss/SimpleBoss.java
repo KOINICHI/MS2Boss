@@ -6,7 +6,7 @@ import android.graphics.Color;
 import android.graphics.Typeface;
 
 /**
- * Created by Sachika on 2015/07/10.
+ * Created by KOINICHI on 2015/07/10.
  */
 public class SimpleBoss {
     public String name;

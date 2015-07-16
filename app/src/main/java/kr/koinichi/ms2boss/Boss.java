@@ -7,6 +7,7 @@ import android.util.Log;
 
 import java.sql.Time;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.TimeZone;
 
@@ -23,7 +24,7 @@ public class Boss {
     public int icon;
     public BossType type;
 
-    public String[] spawn_times;
+    public ArrayList<String> spawn_times;
     public int next_spawn_time_idx;
 
     public Boolean show_flag;
@@ -37,20 +38,26 @@ public class Boss {
         this.level = level;
         this.location = c.getString(location);
         this.icon = icon;
-        this.spawn_times = c.getResources().getStringArray(time);
-
 
         if (type == R.string.elite_boss) { this.type = BossType.ELITE; }
         if (type == R.string.field_boss) { this.type = BossType.FIELD; }
         if (type == R.string.raid_boss) { this.type = BossType.RAID; }
         if (type == R.string.unknown_boss) { this.type = BossType.UNKNOWN; }
 
+        this.spawn_times = new ArrayList<String>(Arrays.asList(c.getResources().getStringArray(time)));
+
         notified_already = 0;
         show_flag = true;
         notify_flag = false;
     }
 
-    public int updateNextSpawnTime() {
+    private int timeToMinutes(String time)
+    {
+        return Integer.parseInt(time.substring(0, 2)) * 60 + Integer.parseInt(time.substring(2,4));
+    }
+
+
+    public void updateNextSpawnTime() {
         TimeZone tz = TimeZone.getTimeZone("UTC");
         Calendar c = Calendar.getInstance(tz);
         c.add(Calendar.HOUR_OF_DAY, 9);
@@ -58,17 +65,21 @@ public class Boss {
         int c_time = c.get(Calendar.HOUR_OF_DAY) * 60 + c.get(Calendar.MINUTE);
         int idx = 0;
 
-        for (int i=0; i<spawn_times.length; i++) {
-            int _i = (i+1) % spawn_times.length;
-            int p_time = Integer.parseInt(spawn_times[i].substring(0,2)) * 60 + Integer.parseInt(spawn_times[i].substring(2,4));
-            int n_time = Integer.parseInt(spawn_times[_i].substring(0,2)) * 60 + Integer.parseInt(spawn_times[_i].substring(2,4));
+        int size=spawn_times.size();
+        for (int i=0; i<size; i++) {
+            int j=(i+1) % size;
+            int p_time = timeToMinutes(spawn_times.get(i));
+            int n_time = timeToMinutes(spawn_times.get(j));
+            if (j == 0) {
+                n_time += 24*60;
+            }
             if (p_time <= c_time && c_time < n_time) {
-                idx = i+1;
+                idx = i;
                 break;
             }
         }
-        next_spawn_time_idx = idx % spawn_times.length;
-        return next_spawn_time_idx;
+
+        next_spawn_time_idx = idx;
     }
 
     public String getNextSpawnTime() {
@@ -80,7 +91,7 @@ public class Boss {
         }
 
         updateNextSpawnTime();
-        String next_time = spawn_times[next_spawn_time_idx];
+        String next_time = spawn_times.get((next_spawn_time_idx + 1)%spawn_times.size());
 
         return next_time;
     }
@@ -98,15 +109,25 @@ public class Boss {
         Calendar c = Calendar.getInstance(tz);
         c.add(Calendar.HOUR_OF_DAY, 9);
 
-        int idx = (updateNextSpawnTime() + n + spawn_times.length) % spawn_times.length;
-        String next_time = spawn_times[idx];
-
-
-        int ret = Integer.parseInt(next_time.substring(0,2)) * 60  + Integer.parseInt(next_time.substring(2,4))
-                    - (c.get(Calendar.HOUR_OF_DAY) * 60 + c.get(Calendar.MINUTE));
-        if (idx == 0) {
-            ret += 24 * 60;
+        int c_time = c.get(Calendar.HOUR_OF_DAY) * 60 + c.get(Calendar.MINUTE);
+        int n_time = 0;
+        updateNextSpawnTime();
+        int size = spawn_times.size();
+        int idx = next_spawn_time_idx + n;
+        if (0 <= idx && idx < size) {
+            ;
         }
+        if (idx < 0) {
+            n_time = -24*60;
+            idx += size;
+        }
+        if (idx >= size) {
+            n_time = (24*60) * (idx/size);
+            idx %= size;
+        }
+        n_time += timeToMinutes(spawn_times.get(idx));
+
+        int ret = n_time - c_time;
         return ret;
     }
 

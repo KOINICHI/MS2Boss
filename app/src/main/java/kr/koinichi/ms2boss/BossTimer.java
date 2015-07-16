@@ -101,7 +101,7 @@ public class BossTimer extends AppCompatActivity {
             for (int i = 0; i < size; i++) {
                 Boss boss = bosses.get(i);
                 if (boss.show_flag) {
-                    boss_list.add(new SimpleBoss(boss.name, boss.location, boss.getNextSpawnTime(), boss.getNextSpawnIn(0), boss.icon));
+                    boss_list.add(new SimpleBoss(boss.name, boss.location, boss.getNextSpawnTime(), boss.getNextSpawnIn(1), boss.icon));
                 }
             }
         }
@@ -111,18 +111,18 @@ public class BossTimer extends AppCompatActivity {
             int count = 0;
             int[] idx = new int[size];
             for (int i = 0; i < size; i++) {
-                idx[i] = -1;
+                idx[i] = 0;
             }
 
             while (count < MAX_DISP) {
-                int min_v = 0x7fffffff, min_i = 0;
+                int min_v = 0x7fffffff, min_i = -1;
                 for (int i = 0; i < size; i++) {
                     if (!bosses.get(i).show_flag) {
                         continue;
                     }
                     int time = bosses.get(i).getNextSpawnIn(idx[i]);
                     if (time < -5) {
-                        idx[i] = 0;
+                        idx[i]++;
                         continue;
                     }
                     if (min_v > time) {
