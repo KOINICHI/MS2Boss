@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/pref_show_setting">
+        <EditTextPreference
+            android:key="pref_show_num"
+            android:title="@string/pref_show_num"
+            android:summary=""
+            android:inputType="numberDecimal"
+            android:defaultValue="50" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="pref_show_flag_boss_list"
+        android:title="@string/pref_select_bosses">
+    </PreferenceCategory>
+
+</PreferenceScreen>

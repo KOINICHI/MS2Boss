@@ -26,6 +26,7 @@ public class Boss {
     public String[] spawn_times;
     public int next_spawn_time_idx;
 
+    public Boolean show_flag;
     public Boolean notify_flag;
     private int notified_already;
 
@@ -45,6 +46,7 @@ public class Boss {
         if (type == R.string.unknown_boss) { this.type = BossType.UNKNOWN; }
 
         notified_already = 0;
+        show_flag = true;
         notify_flag = false;
     }
 
@@ -96,12 +98,13 @@ public class Boss {
         Calendar c = Calendar.getInstance(tz);
         c.add(Calendar.HOUR_OF_DAY, 9);
 
-        int idx = (updateNextSpawnTime() + n) % spawn_times.length;
+        int idx = (updateNextSpawnTime() + n + spawn_times.length) % spawn_times.length;
         String next_time = spawn_times[idx];
+
 
         int ret = Integer.parseInt(next_time.substring(0,2)) * 60  + Integer.parseInt(next_time.substring(2,4))
                     - (c.get(Calendar.HOUR_OF_DAY) * 60 + c.get(Calendar.MINUTE));
-        if (ret < 0) {
+        if (idx == 0) {
             ret += 24 * 60;
         }
         return ret;

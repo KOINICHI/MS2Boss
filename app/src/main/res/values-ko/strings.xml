@@ -64,4 +64,8 @@
     <string name="noti_message">에 출현하는 보스 몬스터 :</string>
     <string name="minutes_before">분 전</string>
     <string name="noti_title">보스 알림</string>
+    <string name="am">오전</string>
+    <string name="cheesemochi">치즈모치</string>
+    <string name="minutes_now">지금</string>
+    <string name="pm">오후</string>
 </resources>

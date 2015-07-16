@@ -41,7 +41,10 @@ public class BossTimer extends AppCompatActivity {
     public static ArrayList<Boss> bosses = null;
     public static int disp_type = BossAdapter.SORT_BY_TIME;
     public static int noti_before = 15;
+    public static int MAX_DISP = 50;
     public static Context ctx;
+
+    SharedPreferences sp;
 
 
     private void initializeBossData() {
@@ -76,7 +79,6 @@ public class BossTimer extends AppCompatActivity {
         public ArrayList<SimpleBoss> boss_list;
         public static final int SORT_BY_BOSS = 0;
         public static final int SORT_BY_TIME = 1;
-        public static final int MAX_DISP = 50;
 
         public BossAdapter(int dispType) {
             boss_list = new ArrayList<SimpleBoss>();
@@ -98,7 +100,9 @@ public class BossTimer extends AppCompatActivity {
             int size = bosses.size();
             for (int i = 0; i < size; i++) {
                 Boss boss = bosses.get(i);
-                boss_list.add(new SimpleBoss(boss.name, boss.location, boss.getNextSpawnTime(), boss.getNextSpawnIn(0), boss.icon));
+                if (boss.show_flag) {
+                    boss_list.add(new SimpleBoss(boss.name, boss.location, boss.getNextSpawnTime(), boss.getNextSpawnIn(0), boss.icon));
+                }
             }
         }
 
@@ -107,13 +111,20 @@ public class BossTimer extends AppCompatActivity {
             int count = 0;
             int[] idx = new int[size];
             for (int i = 0; i < size; i++) {
-                idx[i] = 0;
+                idx[i] = -1;
             }
 
             while (count < MAX_DISP) {
                 int min_v = 0x7fffffff, min_i = 0;
                 for (int i = 0; i < size; i++) {
+                    if (!bosses.get(i).show_flag) {
+                        continue;
+                    }
                     int time = bosses.get(i).getNextSpawnIn(idx[i]);
+                    if (time < -5) {
+                        idx[i] = 0;
+                        continue;
+                    }
                     if (min_v > time) {
                         min_v = time;
                         min_i = i;
@@ -171,13 +182,12 @@ public class BossTimer extends AppCompatActivity {
 
 
     public static BossAdapter bossAdapter = null;
-
     int doCleanRefresh = 0;
     public void displayAdapter() {
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
-        Boolean b = sp.getBoolean("pref_disp_type", true);
-        if (bossAdapter == null || (disp_type != (b ? BossAdapter.SORT_BY_TIME : BossAdapter.SORT_BY_BOSS))) {
-            disp_type = b ? BossAdapter.SORT_BY_TIME : BossAdapter.SORT_BY_BOSS;
+        int b = Integer.parseInt(sp.getString("pref_disp_type", "1"));
+        if (bossAdapter == null || disp_type != b) {
+            disp_type = b;
             bossAdapter = new BossAdapter(disp_type);
 
             ListView listView = (ListView) findViewById(R.id.boss_list);
@@ -249,10 +259,21 @@ public class BossTimer extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
+        PreferenceManager.setDefaultValues(this, R.xml.notiflag, false);
+        PreferenceManager.setDefaultValues(this, R.xml.showflag, false);
+
         ctx = getApplicationContext();
+        sp = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+
         initializeBossData();
-        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+        for (int i=0; i<bosses.size(); i++) {
+            Boss boss = bosses.get(i);
+            boss.show_flag = sp.getBoolean("show_flag_" + boss.name, true);
+        }
         noti_before = Integer.parseInt(sp.getString("pref_noti_delay", "15"));
+        MAX_DISP = Integer.parseInt(sp.getString("pref_show_num", "50"));
+
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_boss_timer);
@@ -277,7 +298,7 @@ public class BossTimer extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            Intent i = new Intent(this, SettingActivity.class);
+            Intent i = new Intent(this, BasicSettingActivity.class);
             startActivity(i);
             return true;
         }

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/pref_noti_setting">
+        <CheckBoxPreference
+            android:key="pref_noti_flag"
+            android:title="@string/pref_noti_flag"
+            android:defaultValue="false"/>
+
+        <EditTextPreference
+            android:key="pref_noti_delay"
+            android:title="@string/pref_noti_delay"
+            android:summary=""
+            android:inputType="numberDecimal"
+            android:defaultValue="15"
+            android:enabled="false" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="pref_disp_type_boss_list"
+        android:title="@string/pref_select_bosses">
+    </PreferenceCategory>
+</PreferenceScreen>

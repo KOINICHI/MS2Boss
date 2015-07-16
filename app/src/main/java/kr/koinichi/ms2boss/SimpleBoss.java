@@ -38,15 +38,25 @@ public class SimpleBoss {
             }
             if (disp_type == BossTimer.BossAdapter.SORT_BY_BOSS) {
                 int hr = Integer.parseInt(time.substring(0,2));
-                sb.append(c.getString(hr > 12 ? R.string.pm : R.string.am));
+                sb.append(c.getString(hr >= 12 ? R.string.pm : R.string.am));
                 sb.append(" ");
                 sb.append(hr % 12);
                 sb.append(":");
                 sb.append(time.substring(2,4));
             }
             if (disp_type == BossTimer.BossAdapter.SORT_BY_TIME) {
-                sb.append(next_spawn_in);
-                sb.append(c.getString(R.string.minutes_later));
+                if (next_spawn_in == 0) {
+                    sb.append(c.getString(R.string.minutes_now));
+                }
+                else if (next_spawn_in < 0) {
+                    text_color = Color.rgb(189,189,189);
+                    sb.append(-next_spawn_in);
+                    sb.append(c.getString(R.string.minutes_before));
+                }
+                else {
+                    sb.append(next_spawn_in);
+                    sb.append(c.getString(R.string.minutes_later));
+                }
             }
             sb.append(" ");
         }
