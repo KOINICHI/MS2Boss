@@ -28,7 +28,7 @@ public class Boss {
     public int next_spawn_time_idx;
 
     public Boolean show_flag;
-    public Boolean notify_flag;
+    public Boolean noti_flag;
     private int notified_already;
 
 
@@ -48,7 +48,7 @@ public class Boss {
 
         notified_already = 0;
         show_flag = true;
-        notify_flag = false;
+        noti_flag = true;
     }
 
     private int timeToMinutes(String time)
@@ -99,7 +99,7 @@ public class Boss {
         }
 
         updateNextSpawnTime();
-        String next_time = spawn_times.get((next_spawn_time_idx + 1)%spawn_times.size());
+        String next_time = spawn_times.get((next_spawn_time_idx + 1) % spawn_times.size());
 
         return next_time;
     }
@@ -136,17 +136,23 @@ public class Boss {
 
     public boolean notifyNow(int delay)
     {
-        if (!notify_flag) {
+        if (!noti_flag) {
             return false;
         }
+        //Log.d("KOINICHI", String.format("%s : %d %d", name, notified_already, getNextSpawnIn(1)));
         if (notified_already > 0) {
             notified_already--;
             return false;
         }
-        int time_left = getNextSpawnIn(0);
-        if (delay == time_left) {
-            notified_already = 70;
-            return true;
+        for (int i=1; i<10; i++) {
+            int time_left = getNextSpawnIn(i);
+            if (delay == time_left) {
+                notified_already = 180;
+                return true;
+            }
+            if (delay > time_left) {
+                break;
+            }
         }
         return false;
     }

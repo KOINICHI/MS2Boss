@@ -40,11 +40,11 @@ public class BossTimer extends AppCompatActivity {
 
     public static ArrayList<Boss> bosses = null;
     public static int disp_type = BossAdapter.SORT_BY_TIME;
+    public static boolean noti_flag  = false;
     public static int noti_before = 15;
     public static int MAX_DISP = 50;
     public static Context ctx;
-
-    SharedPreferences sp;
+    private static SharedPreferences sp;
 
 
     private void initializeBossData() {
@@ -72,7 +72,7 @@ public class BossTimer extends AppCompatActivity {
         bosses.add(new Boss(R.string.nixie, 15, R.string.nixie_loc, R.drawable.nixie, R.array.nixie, R.string.elite_boss));
         bosses.add(new Boss(R.string.revenant_zombie, 22, R.string.revenant_zombie_loc, R.drawable.revenant_zombie, R.array.revenant_zombie, R.string.elite_boss));
         bosses.add(new Boss(R.string.urza, 8, R.string.urza_loc, R.drawable.urza, R.array.urza, R.string.elite_boss));
-        bosses.add(new Boss(R.string.zirant, 30, R.string.zirant_loc, R.drawable.zirant, R.array.zirant, R.string.elite_boss));
+        bosses.add(new Boss(R.string.jirant, 30, R.string.jirant_loc, R.drawable.jirant, R.array.jirant, R.string.elite_boss));
     }
 
     public static class BossAdapter extends BaseAdapter {
@@ -195,9 +195,8 @@ public class BossTimer extends AppCompatActivity {
 
 
     public static BossAdapter bossAdapter = null;
-    int doCleanRefresh = 0;
+    private int doCleanRefresh = 0;
     public void displayAdapter() {
-        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
         int b = Integer.parseInt(sp.getString("pref_disp_type", "1"));
         if (bossAdapter == null || disp_type != b) {
             disp_type = b;
@@ -218,38 +217,45 @@ public class BossTimer extends AppCompatActivity {
 
     public void notifyBosses()
     {
+        if (!noti_flag) {
+            return;
+        }
         int count = 0;
         int icon = 0;
         StringBuilder sb = new StringBuilder();
         sb.append(noti_before);
         sb.append(getString(R.string.minutes_later));
         sb.append(getString(R.string.noti_message));
+        sb.append(" \n");
         for (int i=0; i<bosses.size(); i++) {
             Boss boss = bosses.get(i);
             if (boss.notifyNow(noti_before)) {
+                if (count > 0) {
+                    sb.append(", ");
+                }
                 count++;
                 icon = boss.icon;
                 sb.append(boss.name);
-                sb.append(", ");
-
             }
         }
         if (count > 0) {
-            sb.delete(sb.length() - 2, sb.length());
+            Log.d("KOINICHI", "there is something to notify; initiate notification and send it");
             Intent intent = new Intent(this, BossTimer.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP |
-                            Intent.FLAG_ACTIVITY_SINGLE_TOP);
-            PendingIntent pintent = PendingIntent.getActivity(this, 0, intent, 0);
+                            Intent.FLAG_ACTIVITY_SINGLE_TOP |
+                            Intent.FLAG_ACTIVITY_NEW_TASK);
+            PendingIntent contentintent = PendingIntent.getActivity(this, 0, intent, 0);
 
             Notification noti = new Notification.Builder(getContext())
                     .setContentTitle(getString(R.string.noti_title))
                     .setSmallIcon(R.drawable.noti_icon)
                     .setWhen(System.currentTimeMillis())
+                    .setContentIntent(contentintent)
                     .setDefaults(Notification.DEFAULT_ALL)
                     .setSound(Settings.System.DEFAULT_NOTIFICATION_URI)
                     .setStyle(new Notification.BigTextStyle().bigText(sb.toString()))
                     .build();
-            NotificationManager nm = (NotificationManager)getSystemService(NOTIFICATION_SERVICE);
+            NotificationManager nm = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
             nm.notify(0, noti);
         }
     }
@@ -284,6 +290,7 @@ public class BossTimer extends AppCompatActivity {
             Boss boss = bosses.get(i);
             boss.show_flag = sp.getBoolean("show_flag_" + boss.name, true);
         }
+        noti_flag = sp.getBoolean("pref_noti_flag", false);
         noti_before = Integer.parseInt(sp.getString("pref_noti_delay", "15"));
         MAX_DISP = Integer.parseInt(sp.getString("pref_show_num", "50"));
 

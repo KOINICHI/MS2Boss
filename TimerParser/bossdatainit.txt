@@ -21,4 +21,4 @@ bosses.add(new Boss(R.string.mushmom, 23, R.string.mushmom_loc, R.drawable.mushm
 bosses.add(new Boss(R.string.nixie, 23, R.string.nixie_loc, R.drawable.nixie, R.array.nixie, "Elite", c));
 bosses.add(new Boss(R.string.revenant_zombie, 23, R.string.revenant_zombie_loc, R.drawable.revenant_zombie, R.array.revenant_zombie, "Elite", c));
 bosses.add(new Boss(R.string.urza, 23, R.string.urza_loc, R.drawable.urza, R.array.urza, "Elite", c));
-bosses.add(new Boss(R.string.zirant, 23, R.string.zirant_loc, R.drawable.zirant, R.array.zirant, "Elite", c));
+bosses.add(new Boss(R.string.jirant, 23, R.string.jirant_loc, R.drawable.jirant, R.array.jirant, "Elite", c));

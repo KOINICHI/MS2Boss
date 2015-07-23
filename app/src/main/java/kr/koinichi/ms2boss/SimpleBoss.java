@@ -17,6 +17,8 @@ public class SimpleBoss {
     public int text_style = Typeface.BOLD;
     public int icon;
 
+    private int notified;
+
     public SimpleBoss(String name, String location, String time, int next_spawn_in, int icon) {
         this.name = name;
         this.location = location;

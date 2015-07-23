@@ -50,7 +50,6 @@ public class ShowFlagSettingActivity extends PreferenceActivity {
             pref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
                 public boolean onPreferenceClick(Preference preference) {
                     boss.show_flag = !boss.show_flag;
-                    Log.d("KOINICHI", String.format("%s now %s", boss.name, boss.show_flag ? "on" : "off"));
                     return true;
                 }
             });

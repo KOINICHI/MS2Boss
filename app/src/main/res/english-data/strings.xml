@@ -54,8 +54,8 @@
     <string name="revenant_zombie_loc">Abandoned Charnel House</string>
     <string name="urza">Urza</string>
     <string name="urza_loc">Twisted Canyon</string>
-    <string name="zirant">Dark Zirant</string>
-    <string name="zirant_loc">Todhara\'s Spring Water</string>
+    <string name="jirant">Dark Jirant</string>
+    <string name="jirant_loc">Todhara\'s Spring Water</string>
     <string name="pref_disp_type">Time Display Option</string>
     <string name="pref_disp_type_sum">\'## mins later\' if chekced\n \'##:##\' if not</string>
     <string name="pref_noti_delay">Notification Setting</string>

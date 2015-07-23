@@ -17,7 +17,8 @@
             android:enabled="false" />
     </PreferenceCategory>
     <PreferenceCategory
-        android:key="pref_disp_type_boss_list"
-        android:title="@string/pref_select_bosses">
+        android:key="pref_noti_flag_boss_list"
+        android:title="@string/pref_select_bosses"
+        android:enabled="false">
     </PreferenceCategory>
 </PreferenceScreen>
