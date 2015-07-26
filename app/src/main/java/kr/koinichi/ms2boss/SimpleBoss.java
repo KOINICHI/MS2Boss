@@ -9,17 +9,19 @@ import android.graphics.Typeface;
  * Created by KOINICHI on 2015/07/10.
  */
 public class SimpleBoss {
+    public int id;
     public String name;
     public String location;
     public String time;
     public int next_spawn_in;
-    public int text_color = Color.WHITE;
+    public int text_color = Color.rgb(32, 32, 32);
     public int text_style = Typeface.BOLD;
     public int icon;
 
     private int notified;
 
-    public SimpleBoss(String name, String location, String time, int next_spawn_in, int icon) {
+    public SimpleBoss(int id, String name, String location, String time, int next_spawn_in, int icon) {
+        this.id = id;
         this.name = name;
         this.location = location;
         this.time = time;
@@ -33,7 +35,7 @@ public class SimpleBoss {
         if (time.length() != 0) {
 
             if (next_spawn_in <= BossTimer.noti_before) {
-                text_color = Color.YELLOW;
+                text_color = Color.rgb(255, 160, 0);
             }
             if (next_spawn_in <= 5) {
                 text_color = Color.rgb(255, 64, 0);

@@ -18,6 +18,7 @@ public class Boss {
     public enum BossType {
         ELITE, FIELD, RAID, UNKNOWN;
     }
+    public int id;
     public String name;
     public int level;
     public String location;
@@ -34,6 +35,7 @@ public class Boss {
 
     public Boss(int name, int level, int location, int icon, int time, int type) {
         Context c = BossTimer.getContext();
+
         this.name = c.getString(name);
         this.level = level;
         this.location = c.getString(location);
@@ -48,7 +50,7 @@ public class Boss {
 
         notified_already = 0;
         show_flag = true;
-        noti_flag = true;
+        noti_flag = false;
     }
 
     private int timeToMinutes(String time)
@@ -150,11 +152,12 @@ public class Boss {
                 notified_already = 180;
                 return true;
             }
-            if (delay > time_left) {
-                break;
-            }
         }
         return false;
+    }
+
+    public void toggleNotiFlag() {
+        noti_flag = !noti_flag;
     }
 
 }

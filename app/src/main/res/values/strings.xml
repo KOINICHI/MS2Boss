@@ -3,6 +3,7 @@
     <string name="app_name">MS2 보스 타이머</string>
     <string name="cheesemochi">치즈모치</string>
     <string name="action_settings">설정</string>
+    <string name="menu_toggle_noti">알림</string>
 
     <string name="pref_basic_setting">기본 설정</string>
     <string name="pref_disp_type">시간 형식</string>

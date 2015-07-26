@@ -1,5 +1,6 @@
 package kr.koinichi.ms2boss;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -25,6 +26,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -40,8 +42,8 @@ public class BossTimer extends AppCompatActivity {
 
     public static ArrayList<Boss> bosses = null;
     public static int disp_type = BossAdapter.SORT_BY_TIME;
-    public static boolean noti_flag  = false;
-    public static int noti_before = 15;
+    public static boolean noti_flag = true;
+    public static int noti_before = 10;
     public static int MAX_DISP = 50;
     public static Context ctx;
     private static SharedPreferences sp;
@@ -73,6 +75,14 @@ public class BossTimer extends AppCompatActivity {
         bosses.add(new Boss(R.string.revenant_zombie, 22, R.string.revenant_zombie_loc, R.drawable.revenant_zombie, R.array.revenant_zombie, R.string.elite_boss));
         bosses.add(new Boss(R.string.urza, 8, R.string.urza_loc, R.drawable.urza, R.array.urza, R.string.elite_boss));
         bosses.add(new Boss(R.string.jirant, 30, R.string.jirant_loc, R.drawable.jirant, R.array.jirant, R.string.elite_boss));
+
+        for (int i=0; i<bosses.size(); i++) {
+            bosses.get(i).id = i;
+        }
+    }
+
+    public static void toggleBossNotiFlag(int id) {
+        bosses.get(id).toggleNotiFlag();
     }
 
     public static class BossAdapter extends BaseAdapter {
@@ -101,7 +111,12 @@ public class BossTimer extends AppCompatActivity {
             for (int i = 0; i < size; i++) {
                 Boss boss = bosses.get(i);
                 if (boss.show_flag) {
-                    boss_list.add(new SimpleBoss(boss.name, boss.location, boss.getNextSpawnTime(), boss.getNextSpawnIn(1), boss.icon));
+                    boss_list.add(new SimpleBoss(boss.id,
+                                                boss.name,
+                                                boss.location,
+                                                boss.getNextSpawnTime(),
+                                                boss.getNextSpawnIn(1),
+                                                boss.icon));
                 }
             }
         }
@@ -115,14 +130,14 @@ public class BossTimer extends AppCompatActivity {
             }
 
 
-            for (int i=0; i<size; i++) {
+            for (int i = 0; i < size; i++) {
                 Boss boss = bosses.get(i);
                 if (!boss.show_flag) {
                     continue;
                 }
                 int time = boss.getNextSpawnIn(0);
                 if (-5 <= time && time < 0) {
-                    boss_list.add(new SimpleBoss(boss.name, boss.location, boss.getNextSpawnTime(), time, boss.icon));
+                    boss_list.add(new SimpleBoss(boss.id, boss.name, boss.location, boss.getNextSpawnTime(), time, boss.icon));
                     count++;
                     if (count > MAX_DISP) {
                         break;
@@ -133,7 +148,7 @@ public class BossTimer extends AppCompatActivity {
 
             while (count <= MAX_DISP) {
                 int min_v = 0x7fffffff, min_i = -1;
-                for (int i=0; i<size; i++) {
+                for (int i = 0; i < size; i++) {
                     if (!bosses.get(i).show_flag) {
                         continue;
                     }
@@ -145,7 +160,7 @@ public class BossTimer extends AppCompatActivity {
                 }
 
                 Boss boss = bosses.get(min_i);
-                boss_list.add(new SimpleBoss(boss.name, boss.location, boss.getNextSpawnTime(), min_v, boss.icon));
+                boss_list.add(new SimpleBoss(boss.id, boss.name, boss.location, boss.getNextSpawnTime(), min_v, boss.icon));
 
                 idx[min_i]++;
                 count++;
@@ -196,6 +211,7 @@ public class BossTimer extends AppCompatActivity {
 
     public static BossAdapter bossAdapter = null;
     private int doCleanRefresh = 0;
+
     public void displayAdapter() {
         int b = Integer.parseInt(sp.getString("pref_disp_type", "1"));
         if (bossAdapter == null || disp_type != b) {
@@ -204,19 +220,25 @@ public class BossTimer extends AppCompatActivity {
 
             ListView listView = (ListView) findViewById(R.id.boss_list);
             listView.setAdapter(bossAdapter);
-        }
-        else if (doCleanRefresh == 0) {
+            listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    Intent i = new Intent(BossTimer.getContext(), BossActivity.class);
+                    SimpleBoss boss = (SimpleBoss)parent.getAdapter().getItem(position);
+                    i.putExtra("boss_id", boss.id);
+                    startActivity(i);
+                }
+            });
+        } else if (doCleanRefresh == 0) {
             doCleanRefresh = 5;
             bossAdapter.updateBossList(disp_type);
             bossAdapter.notifyDataSetChanged();
-        }
-        else {
+        } else {
             doCleanRefresh--;
         }
     }
 
-    public void notifyBosses()
-    {
+    public void notifyBosses() {
         if (!noti_flag) {
             return;
         }
@@ -227,7 +249,7 @@ public class BossTimer extends AppCompatActivity {
         sb.append(getString(R.string.minutes_later));
         sb.append(getString(R.string.noti_message));
         sb.append(" \n");
-        for (int i=0; i<bosses.size(); i++) {
+        for (int i = 0; i < bosses.size(); i++) {
             Boss boss = bosses.get(i);
             if (boss.notifyNow(noti_before)) {
                 if (count > 0) {
@@ -236,14 +258,14 @@ public class BossTimer extends AppCompatActivity {
                 count++;
                 icon = boss.icon;
                 sb.append(boss.name);
+                Log.d("KOINICHI", "notify " + boss.name);
             }
         }
         if (count > 0) {
-            Log.d("KOINICHI", "there is something to notify; initiate notification and send it");
             Intent intent = new Intent(this, BossTimer.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP |
-                            Intent.FLAG_ACTIVITY_SINGLE_TOP |
-                            Intent.FLAG_ACTIVITY_NEW_TASK);
+                    Intent.FLAG_ACTIVITY_SINGLE_TOP |
+                    Intent.FLAG_ACTIVITY_NEW_TASK);
             PendingIntent contentintent = PendingIntent.getActivity(this, 0, intent, 0);
 
             Notification noti = new Notification.Builder(getContext())
@@ -251,15 +273,16 @@ public class BossTimer extends AppCompatActivity {
                     .setSmallIcon(R.drawable.noti_icon)
                     .setWhen(System.currentTimeMillis())
                     .setContentIntent(contentintent)
-                    .setDefaults(Notification.DEFAULT_ALL)
+                    .setVibrate(new long[]{1000, 1000, 1000, 1000})
+                    .setDefaults(Notification.DEFAULT_LIGHTS)
                     .setSound(Settings.System.DEFAULT_NOTIFICATION_URI)
+                    .setAutoCancel(true)
                     .setStyle(new Notification.BigTextStyle().bigText(sb.toString()))
                     .build();
             NotificationManager nm = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
             nm.notify(0, noti);
         }
     }
-
 
 
     final Handler handler = new Handler();
@@ -278,20 +301,23 @@ public class BossTimer extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.d("KOINICHI", "BossTimer onCreate");
         PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
         PreferenceManager.setDefaultValues(this, R.xml.notiflag, false);
         PreferenceManager.setDefaultValues(this, R.xml.showflag, false);
 
         ctx = getApplicationContext();
         sp = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+        bossAdapter = null;
 
         initializeBossData();
-        for (int i=0; i<bosses.size(); i++) {
+        for (int i = 0; i < bosses.size(); i++) {
             Boss boss = bosses.get(i);
             boss.show_flag = sp.getBoolean("show_flag_" + boss.name, true);
+            boss.noti_flag = sp.getBoolean("noti_flag_" + boss.name, false);
         }
-        noti_flag = sp.getBoolean("pref_noti_flag", false);
-        noti_before = Integer.parseInt(sp.getString("pref_noti_delay", "15"));
+        noti_flag = sp.getBoolean("pref_noti_flag", true);
+        noti_before = Integer.parseInt(sp.getString("pref_noti_delay", "10"));
         MAX_DISP = Integer.parseInt(sp.getString("pref_show_num", "50"));
 
 
@@ -326,9 +352,20 @@ public class BossTimer extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
     public static Context getContext() {
         return ctx;
     }
-
+    public static ActionBar getAcionBar() { return getAcionBar(); }
 
 }

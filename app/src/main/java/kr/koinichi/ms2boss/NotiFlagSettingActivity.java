@@ -35,7 +35,7 @@ public class NotiFlagSettingActivity extends PreferenceActivity {
         Context c;
 
         private void updatePreferenceStrings() {
-            String delay = sp.getString("pref_noti_delay", "15");
+            String delay = sp.getString("pref_noti_delay", "10");
 
             EditTextPreference delaysp = (EditTextPreference) findPreference("pref_noti_delay");
             delaysp.setSummary(delay + c.getString(R.string.minutes_before));
@@ -110,7 +110,7 @@ public class NotiFlagSettingActivity extends PreferenceActivity {
 
         @Override
         public void onPause() {
-            BossTimer.noti_before = Integer.parseInt(sp.getString("pref_noti_delay", "15"));
+            BossTimer.noti_before = Integer.parseInt(sp.getString("pref_noti_delay", "10"));
             super.onPause();
         }
     }

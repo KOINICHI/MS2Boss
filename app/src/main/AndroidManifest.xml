@@ -18,6 +18,15 @@
         </activity>
 
         <activity
+            android:name="kr.koinichi.ms2boss.BossActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="kr.koinichi.ms2boss.BossTimer" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kr.koinichi.ms2boss.BossTimer" />
+        </activity>
+
+        <activity
             android:name="kr.koinichi.ms2boss.BasicSettingActivity"
             android:label="@string/app_name"
             android:parentActivityName="kr.koinichi.ms2boss.BossTimer" >
@@ -43,6 +52,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="kr.koinichi.ms2boss.BasicSettingActivity" />
         </activity>
+
     </application>
 
 </manifest>
