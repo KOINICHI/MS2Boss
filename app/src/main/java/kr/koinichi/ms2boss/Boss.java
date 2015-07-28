@@ -15,15 +15,23 @@ import java.util.TimeZone;
  * Created by KOINICHI on 2015/07/10.
  */
 public class Boss {
-    public enum BossType {
-        ELITE, FIELD, RAID, UNKNOWN;
-    }
+    public static final int ELITE = 0;
+    public static final int FIELD = 1;
+    public static final int RAID = 2;
+    public static final int UNKNOWN = 3;
+
     public int id;
+
     public String name;
-    public int level;
     public String location;
+    public String type;
+    public String desc;
+
+    public int level;
+    public int boss_type;
+
     public int icon;
-    public BossType type;
+    public int pic;
 
     public ArrayList<String> spawn_times;
     public int next_spawn_time_idx;
@@ -33,20 +41,22 @@ public class Boss {
     private int notified_already;
 
 
-    public Boss(int name, int level, int location, int icon, int time, int type) {
+    // bosses.add(new Boss(R.string.baraha, 24, R.string.baraha_loc, R.drawable.baraha, R.array.baraha, R.string.elite_boss));
+    public Boss(String id) {
         Context c = BossTimer.getContext();
+        this.name = c.getString(c.getResources().getIdentifier(id, "string", BossTimer.packageName));
+        this.location = c.getString(c.getResources().getIdentifier(id + "_loc", "string", BossTimer.packageName));
+        this.type = c.getString(c.getResources().getIdentifier(id + "_type", "string", BossTimer.packageName));
+        this.desc = c.getString(c.getResources().getIdentifier(id + "_desc", "string", BossTimer.packageName));
 
-        this.name = c.getString(name);
-        this.level = level;
-        this.location = c.getString(location);
-        this.icon = icon;
+        this.icon = c.getResources().getIdentifier(id + "_icon", "drawable", BossTimer.packageName);
+        this.pic = c.getResources().getIdentifier(id + "_big", "drawable", BossTimer.packageName);
 
-        if (type == R.string.elite_boss) { this.type = BossType.ELITE; }
-        if (type == R.string.field_boss) { this.type = BossType.FIELD; }
-        if (type == R.string.raid_boss) { this.type = BossType.RAID; }
-        if (type == R.string.unknown_boss) { this.type = BossType.UNKNOWN; }
+        this.level = Integer.parseInt(c.getString(c.getResources().getIdentifier(id + "_level", "string", BossTimer.packageName)));
+        this.boss_type = Integer.parseInt(c.getString(c.getResources().getIdentifier(id + "_boss_type", "string", BossTimer.packageName)));
 
-        this.spawn_times = new ArrayList<String>(Arrays.asList(c.getResources().getStringArray(time)));
+        int time = c.getResources().getIdentifier(id + "_time", "array", BossTimer.packageName);
+        this.spawn_times = new ArrayList<>(Arrays.asList(c.getResources().getStringArray(time)));
 
         notified_already = 0;
         show_flag = true;
@@ -93,10 +103,10 @@ public class Boss {
     }
 
     public String getNextSpawnTime() {
-        if (type == BossType.UNKNOWN) {
+        if (boss_type == Boss.UNKNOWN) {
             return "";
         }
-        if (type == BossType.RAID) {
+        if (boss_type == Boss.RAID) {
             return "";
         }
 
@@ -108,7 +118,7 @@ public class Boss {
 
     public int getNextSpawnIn(int n)
     {
-        if (!(type == BossType.ELITE || type == BossType.FIELD)) {
+        if (!(boss_type == Boss.ELITE || boss_type == Boss.FIELD)) {
             return 0x7fffffff;
         }
 

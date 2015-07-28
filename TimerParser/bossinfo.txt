@@ -21,4 +21,4 @@ mushmom,Mushmom,21,Someone Else's House,Elite
 nixie,Nixie,15,Fairy Tree Lake,Elite
 revenant_zombie,Revenant Zombie,22,Abandoned Charnel House,Elite
 urza,Urza,8,Twisted Canyon,Elite
-Jirant,Dark Jirant,30,Todhara's Spring Water,Elite
+jirant,Dark Jirant,30,Todhara's Spring Water,Elite

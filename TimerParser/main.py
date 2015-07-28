@@ -89,3 +89,32 @@ def namenloc():
 				", \"" + type +
 				"\", c));\n")
 	f.close()
+
+	
+def boss_id():
+	ids = []
+	f = open('bossdatainit.txt','r')
+	for line in f.read().split('\n'):
+		ret = ""
+		for c in line[29:]:
+			if c == ',':
+				break
+			ret += c
+		print ("<item>" + ret + "</item>")
+	f.close()
+	
+
+	
+
+ids = []
+f = open('bossinfo.txt','r')
+lines = f.read()
+f.close()
+f = open('bossdetaildata.txt', 'w')
+m = {"Elite":"0", "Field Boss":"1", "Raid Boss":"2", "Unknown":"3"}
+for line in lines.split('\n'):
+	filename,name,level,location,type = line.split(',')
+	print(filename)
+	f.write("<string name=\"" + filename + "_boss_type\">" + m[type] + "</string>\n")
+	f.write("<string name=\"" + filename + "_level\">" + str(level) + "</string>\n")
+f.close()

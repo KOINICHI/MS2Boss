@@ -78,4 +78,19 @@
     <string name="urza_loc">굽이치는 협곡</string>
     <string name="jirant">다크 지란트</string>
     <string name="jirant_loc">토드하라의 샘물</string>
+
+    <string name="human_type">인간형</string>
+    <string name="divinity_type">신수형</string>
+    <string name="devil_type">악마형</string>
+    <string name="fairy_type">요정형</string>
+    <string name="beast_type">야수형</string>
+    <string name="undead_type">언데드형</string>
+    <string name="machine_type">기계형</string>
+    <string name="object_type">사물형</string>
+    <string name="plant_type">식물형</string>
+    <string name="spirit_type">정령형</string>
+
+    <string name="boss_type_label">유형</string>
+    <string name="boss_loc_label">등장지역</string>
+    <string name="boss_desc_label">특이사항</string>
 </resources>
