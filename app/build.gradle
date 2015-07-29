@@ -5,7 +5,7 @@ android {
     buildToolsVersion "22.0.1"
 
     defaultConfig {
-        applicationId "kr.koinichi.ms2boss"
+        applicationId "kr.koinichi.ms2bosstimer"
         minSdkVersion 16
         targetSdkVersion 22
         versionCode 1

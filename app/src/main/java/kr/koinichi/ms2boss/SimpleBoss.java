@@ -42,11 +42,11 @@ public class SimpleBoss {
             }
             if (disp_type == BossTimer.BossAdapter.SORT_BY_BOSS) {
                 int hr = Integer.parseInt(time.substring(0,2));
-                sb.append(c.getString(hr >= 12 ? R.string.pm : R.string.am));
-                sb.append(" ");
                 sb.append(hr % 12);
                 sb.append(":");
                 sb.append(time.substring(2,4));
+                sb.append(" ");
+                sb.append(c.getString(hr >= 12 ? R.string.pm : R.string.am));
             }
             if (disp_type == BossTimer.BossAdapter.SORT_BY_TIME) {
                 if (next_spawn_in == 0) {
