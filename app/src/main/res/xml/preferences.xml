@@ -3,10 +3,16 @@
     <PreferenceCategory
         android:title="@string/pref_basic_setting">
         <ListPreference
-            android:key="pref_disp_type"
-            android:title="@string/pref_disp_type"
-            android:entries="@array/disp_tpyes"
-            android:entryValues="@array/disp_tpyes_data"
+            android:key="pref_sort_by"
+            android:title="@string/pref_sort_by"
+            android:entries="@array/sort_by"
+            android:entryValues="@array/sort_by_values"
+            android:defaultValue="1" />
+        <ListPreference
+            android:key="pref_time_format"
+            android:title="@string/pref_time_format"
+            android:entries="@array/time_format"
+            android:entryValues="@array/time_format_values"
             android:defaultValue="1" />
         <Preference
             android:key="pref_noti_setting"
@@ -18,7 +24,7 @@
     <PreferenceCategory
         android:key="about"
         android:title="About">
-        <Preference android:title="Version" android:summary="0.1.0" />
+        <Preference android:title="Version" android:summary="0.1.1" />
         <Preference android:title="Made By" android:summary="@string/cheesemochi" />
     </PreferenceCategory>
 </PreferenceScreen>

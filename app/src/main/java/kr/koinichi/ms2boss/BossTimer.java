@@ -43,7 +43,8 @@ import java.util.TimerTask;
 public class BossTimer extends AppCompatActivity {
 
     public static ArrayList<Boss> bosses = null;
-    public static int disp_type = BossAdapter.SORT_BY_TIME;
+    public static int sort_by = BossAdapter.SORT_BY_TIME;
+    public static int time_format = BossAdapter.TIME_FORMAT_MINUTES;
     public static boolean noti_flag = true;
     public static int noti_before = 10;
     public static int MAX_DISP = 50;
@@ -80,6 +81,9 @@ public class BossTimer extends AppCompatActivity {
         public ArrayList<SimpleBoss> boss_list;
         public static final int SORT_BY_BOSS = 0;
         public static final int SORT_BY_TIME = 1;
+
+        public static final int TIME_FORMAT_MINUTES = 0;
+        public static final int TIME_FORMAT_EXACT = 1;
 
         public BossAdapter(int dispType) {
             boss_list = new ArrayList<SimpleBoss>();
@@ -188,7 +192,7 @@ public class BossTimer extends AppCompatActivity {
             SimpleBoss boss = boss_list.get(id);
 
             boss_name.setText(boss.name);
-            boss_time.setText(boss.getTimeString(disp_type));
+            boss_time.setText(boss.getTimeString(time_format));
             boss_time.setTextColor(boss.text_color);
             boss_time.setTypeface(null, boss.text_style);
             boss_loc.setText(boss.location);
@@ -201,13 +205,18 @@ public class BossTimer extends AppCompatActivity {
 
 
     public static BossAdapter bossAdapter = null;
-    private int doCleanRefresh = 0;
+    private int doCleanRefresh = 5;
 
     public void displayAdapter() {
-        int b = Integer.parseInt(sp.getString("pref_disp_type", "1"));
-        if (bossAdapter == null || disp_type != b) {
-            disp_type = b;
-            bossAdapter = new BossAdapter(disp_type);
+        int new_sort_by = Integer.parseInt(sp.getString("pref_sort_by", "1"));
+        int new_time_format = Integer.parseInt(sp.getString("pref_time_format", "1"));
+        boolean forceUpdateList = ((new_sort_by != sort_by) || (new_time_format != time_format));
+        sort_by = new_sort_by;
+        time_format = new_time_format;
+
+        if (bossAdapter == null || forceUpdateList) {
+            bossAdapter = new BossAdapter(sort_by);
+            forceUpdateList = false;
 
             ListView listView = (ListView) findViewById(R.id.boss_list);
             listView.setAdapter(bossAdapter);
@@ -215,14 +224,16 @@ public class BossTimer extends AppCompatActivity {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                     Intent i = new Intent(BossTimer.getContext(), BossActivity.class);
-                    SimpleBoss boss = (SimpleBoss)parent.getAdapter().getItem(position);
+                    SimpleBoss boss = (SimpleBoss) parent.getAdapter().getItem(position);
                     i.putExtra("boss_id", boss.id);
                     startActivity(i);
                 }
             });
+            bossAdapter.updateBossList(sort_by);
         } else if (doCleanRefresh == 0) {
             doCleanRefresh = 5;
-            bossAdapter.updateBossList(disp_type);
+            forceUpdateList = false;
+            bossAdapter.updateBossList(sort_by);
             bossAdapter.notifyDataSetChanged();
         } else {
             doCleanRefresh--;
@@ -310,6 +321,8 @@ public class BossTimer extends AppCompatActivity {
         noti_flag = sp.getBoolean("pref_noti_flag", true);
         noti_before = Integer.parseInt(sp.getString("pref_noti_delay", "10"));
         MAX_DISP = Integer.parseInt(sp.getString("pref_show_num", "50"));
+        sort_by = Integer.parseInt(sp.getString("pref_sort_by", "1"));
+        time_format = Integer.parseInt(sp.getString("pref_time_format", "1"));
 
 
         super.onCreate(savedInstanceState);

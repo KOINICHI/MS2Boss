@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="chau_the_guard_boss_type">0</string>
+    <string name="chau_the_guard_level">12</string>
+    <string name="chau_the_guard_type">
+        @string/human_type
+    </string>
+    <string name="chau_the_guard_desc">
+        브로커 랄프가 고용한 경비대장으로 골든타워 주변을 경계, 감시하고 있다. 신분이나 출신은 알려져 있지 않지만, 이상한 약을 먹은 뒤 갑자기 힘이 솟구쳐 기고만장해졌다는 소문이 있다.\n강철 몽둥이를 자유자재로 휘두르며, 몽둥이로 땅을 한 번 내려찍으면 강력한 충격파가 발생할 정도의 괴력이라고 한다.
+    </string>
+
+    <string name="griffon_boss_type">1</string>
+    <string name="griffon_level">23</string>
+    <string name="griffon_type">
+        @string/divinity_type
+    </string>
+    <string name="griffon_desc">
+        까마득한 옛날 페리온의 신성한 산, 바야르 꼭대기에서 태어난 세 마리의 그리폰 중 하나이다.\n그리폰은 페리온을 굽어보며 고요하고 평화롭게 지내고 있었으나, 어느 날 페리온의 어리석은 전사 하나가 강력한 힘을 갖기 위해 그리폰의 알을 탐하면서 그리폰, 그리피나 부부는 결국 어두운 증오에 물들어 타락했다.
+    </string>
+
+    <string name="griffina_boss_type">1</string>
+    <string name="griffina_level">30</string>
+    <string name="griffina_type">
+        @string/divinity_type
+    </string>
+    <string name="griffina_desc">
+        바야르 꼭대기에서 태어난 세 마리의 그리폰들 중 하나로, 그리폰과는 부부의 인연을 맺었다.\n모성애가 강한 그리피나는 둘 사이에서 낳은 알을 누구보다 소중히 여겨 매일같이 보살피고 한시도 곁에서 떼어놓지 않았다. 그러나 그릇된 욕망을 가진 페리온의 한 전사에게 알을 빼앗긴 후로 그리피나는 증오와 복수의 화신이 되어 인간들을 공격하기 시작했다.\n인간들에 대한 증오와 알을 잠시라도 혼자 두어 표적이 되게 한 죄책감으로 인한 그리피나의 저주의 힘은 접근한 생물의 생기와 기력을 빼앗으며, 그리폰보다도 알에 대한 애착이 강했던 만큼 더욱 강력한 공격을 한다고 알려져 있다.
+    </string>
+
+    <string name="devorak_boss_type">2</string>
+    <string name="devorak_level">30</string>
+    <string name="devorak_type">
+        @string/devil_type
+    </string>
+    <string name="devorak_desc">
+        데블린 종족 중에서도 가장 사악하고 신비로운 존재.\n어둠의 그림자술로 그림자 군단의 힘을 유지하는 역할을 하는 것으로 알려져 있다.
+    </string>
+
+    <string name="baraha_boss_type">0</string>
+    <string name="baraha_level">24</string>
+    <string name="baraha_type">
+        @string/human_type
+    </string>
+    <string name="baraha_desc">
+        십여 년 전 깡패 바라하가 아직 새끼돼지였을 무렵...\n깡패 바라하는 귀족들의 저녁 파티에 올라 갈 바베큐 요리가 되기 위해 도축장으로 끌려가고 있었다. 사육장 밖으로 처음 나온 그는 바깥 풍경이 너무나 신기했고, 바깥을 더 잘 보기 위해 떼를 써서 어른들의 등에 올라탔다. 그때 트럭이 급정차하는 바람에 바라하는 트럭 밖으로 떨어지고 말았다.\n\n이후 정처없이 세상을 떠돌던 깡패 바라하는 사람들이 자신을 잡아먹으려 했다는 사실을 깨닫고 점점 비뚤어진 성격으로 자랐다. 그는 곧 거대한 몸집과 엄청난 힘을 이용하여 사람들의 돈은 물론 행복을 파괴하는 초원의 무법자로 거듭났다.\n휘두르는 몽둥이에 스치기만 해도 크게 상처입고 쓰러진다고 하니, 사람들은 깡패 바라하가 다가오면 가진 물건을 전부 내놓고 도망가기 바쁠 수밖에 없다.\n
+    </string>
+
+    <string name="nixie_boss_type">0</string>
+    <string name="nixie_level">15</string>
+    <string name="nixie_type">
+        @string/human_type
+    </string>
+    <string name="nixie_desc">
+        닉시는 에피의 쌍둥이 자매로 원래 함께 숲의 폭포를 지키던 물의 요정이었다.\n취향이 비슷했던 자매는 동시에 한 남자를 사랑하게 되었다고 하는데…
+    </string>
+
+    <string name="jirant_boss_type">0</string>
+    <string name="jirant_level">30</string>
+    <string name="jirant_type">
+        @string/divinity_type
+    </string>
+    <string name="jirant_desc">
+        고대 메이플 월드에는 본래 한 가지 형태의 용족만이 존재했다. 이들은 \'신의 여의주\'를 둘러싸고 끊임없이 전쟁하며 분열해왔는데, 다크 지란트의 경우는 엘리니아로 흩어진 용으로 그 모습이나 능력이 엘리니아의 깊은 숲 속 환경에서 살기 적합하도록 진화했다고 한다.\n다크 지란트의 외양은 나무와 나뭇가지 사이를 날아다닐 수 있는 작은 몸집과 장애물로부터 머리를 보호하는 단단한 뿔, 나무 잔가지를 한 번에 쳐내는 강력한 꼬리와 날카로운 발톱을 지닌 것이 특징이다. 특히 요정들의 마법에 대항하기 위해 암흑과 공포를 유발하는 어둠의 마력에 특화되었다고 한다.
+    </string>
+
+    <string name="devlin_warrior_boss_type">1</string>
+    <string name="devlin_warrior_level">21</string>
+    <string name="devlin_warrior_type">
+        @string/devil_type
+    </string>
+    <string name="devlin_warrior_desc">
+        쉐도우 월드 깊은 지옥의 심연에서 태어난 데블린 종족으로 그림자 군단의 전사이다.\n이들은 포악한 천성을 지니고 있어 그림자 군단 내에서도 자기들끼리 싸움이 끊이지 않는다고 한다. 이들은 메이플 월드의 곳곳을 침략하고 있으며, 타고난 육중한 몸으로 지진을 일으키거나 몸을 말아 구르면서 주변의 건물이나 사람들을 전부 밀어버린다.
+    </string>
+
+    <string name="devlin_chief_boss_type">3</string>
+    <string name="devlin_chief_level">24</string>
+    <string name="devlin_chief_type">
+        @string/devil_type
+    </string>
+    <string name="devlin_chief_desc">
+        실제로 존재하는 녀석인지 불분명하다.\n데블린 워리어가 쓰러진 후 나타난다는 소문이 있지만 확실한 목격자는 없다고 한다.
+    </string>
+
+    <string name="dun_dun_boss_type">1</string>
+    <string name="dun_dun_level">15</string>
+    <string name="dun_dun_type">
+        @string/beast_type
+    </string>
+    <string name="dun_dun_desc">
+        빅토리아 아일랜드에 닥친 원인 모를 지각변동 때문에 흘러내린 산업 폐기물과 스파크에 노출되어 돌연변이 개구리가 탄생했다. 거대한 전기총으로 잠시나마 이 개구리를 제압하기도 했지만 완전히 쓰러트리는 건 불가능한 일이었다. 지금은 출입 제한 구역에 봉인되어 있긴 하지만 가끔 난동이라도 부릴 때면 그 여파가 주변 땅까지 한참을 울릴 정도로 강력하다고 한다.\n거대한 개구리 둔둔은 높이 점프하여 질펀한 엉덩이로 쿵 내려찍는 공격으로 상대를 위협한다. 특히 이 개구리 엉덩이 힘은 매우 강력해서 큰 회오리바람을 불러일으킬 정도다. 이 바람에 휩쓸리면 숙련된 모험가조차도 버티기 힘들지 모른다.
+    </string>
+
+    <string name="revenant_zombie_boss_type">0</string>
+    <string name="revenant_zombie_level">22</string>
+    <string name="revenant_zombie_type">
+        @string/undead_type
+    </string>
+    <string name="revenant_zombie_desc">
+        나무꾼의 언덕 한구석에 있는 버려진 납골당 깊은 곳에 나타난다는 의문의 존재.\n목격자에 따르면 도끼를 휘두르며 독을 내뿜는 거대한 좀비의 모습을 하고 있다는데…
+    </string>
+
+    <string name="mark_beta_boss_type">2</string>
+    <string name="mark_beta_level">30</string>
+    <string name="mark_beta_type">
+        @string/machine_type
+    </string>
+    <string name="mark_beta_desc">
+        카트로닉 박사에 의해 만들어진 전쟁용 살상무기.\n원래 재미삼아 소소한 도우미나 장난감 로봇을 만들던 카트로닉 박사가 무슨 연유로 이런 위험한 로봇을 개발했는지 밝혀진 바는 없다.\n목격자의 정보로는 높은 빌딩 꼭대기로 점프하며 도망친 뒤 쫓아오는 적들에게 치명적인 공격을 가한다고 한다. 이 로봇의 광기를 멈추려면 재빨리 쫓아가 그의 모터를 파괴해야만 한다.
+    </string>
+
+    <string name="mark_alpha_boss_type">1</string>
+    <string name="mark_alpha_level">27</string>
+    <string name="mark_alpha_type">
+        @string/machine_type
+    </string>
+    <string name="mark_alpha_desc">
+        카트로닉 박사에 의해 만들어진 전쟁용 살상무기.\n원래 재미삼아 소소한 도우미나 장난감 로봇을 만들던 카트로닉 박사가 무슨 연유로 이런 위험한 로봇을 개발했는지 밝혀진 바는 없다.\n목격자의 정보로는 다양한 방향의 레이저 공격과 감전 공격을 사용하며, 바닥에 레이저를 발사해 적을 고립시킨다고 한다.
+    </string>
+
+    <string name="madonette_boss_type">0</string>
+    <string name="madonette_level">17</string>
+    <string name="madonette_type">
+        @string/object_type
+    </string>
+    <string name="madonette_desc">
+        커닝시티에서 실종된 한 소녀의 인형과 꼭 닮은 몬스터가 나타났는 제보가 잇따르고 있다. 진위 여부를 확인하기 위한 시도가 있었지만 거대한 도끼를 휘두르며 공격을 해 대는 통에 확인이 어려웠다고 한다.
+    </string>
+
+    <string name="mushmom_boss_type">0</string>
+    <string name="mushmom_level">21</string>
+    <string name="mushmom_type">
+        @string/plant_type
+    </string>
+    <string name="mushmom_desc">
+        집채만 한 덩치의 버섯 몬스터로, 이름에서 알 수 있듯 모든 버섯 몬스터의 어머니격 존재라고 한다.\n거대한 몸을 이용해 사람들을 짓누르거나 독구슬을 토하기도 하는 이 몬스터는 엄청난 소유욕을 가지고 있다고 알려져 있다. 이 때문에 뻔뻔하게도 남의 집에 무단 침입, 무단 점거를 일삼는다.\n머쉬맘을 오랫동안 연구한 한 학자는 "버섯이므로 집을 짓지 못하는 것은 당연하다. 특히 머쉬맘처럼 거대한 버섯은 나무를 집으로 삼고 살아가기에 불편한 점이 너무 많다"며 머쉬맘들의 나쁜 습성을 옹호하는 발언을 해 질타를 받은 적이 있다.
+    </string>
+
+    <string name="boogieccoli_maple_boss_type">0</string>
+    <string name="boogieccoli_maple_level">3</string>
+    <string name="boogieccoli_maple_type">
+        @string/beast_type
+    </string>
+    <string name="boogieccoli_maple_desc">
+        등껍질에서 거대한 브로콜리가 자라고 있는 변태 거북이다.\n겉으로는 온순해 보이지만 한번 화가 나면 상상 그 이상의 모습을 볼 수 있다고 한다.
+    </string>
+
+    <string name="boogieccoli_victoria_boss_type">0</string>
+    <string name="boogieccoli_victoria_level">3</string>
+    <string name="boogieccoli_victoria_type">
+        @string/beast_type
+    </string>
+    <string name="boogieccoli_victoria_desc">
+        등껍질에서 거대한 브로콜리가 자라고 있는 변태 거북이다.\n겉으로는 온순해 보이지만 한번 화가 나면 상상 그 이상의 모습을 볼 수 있다고 한다.
+    </string>
+
+    <string name="epie_boss_type">0</string>
+    <string name="epie_level">13</string>
+    <string name="epie_type">
+        @string/fairy_type
+    </string>
+    <string name="epie_desc">
+        에피는 닉시의 쌍둥이 자매로 원래 함께 숲의 폭포를 지키던 물의 요정이었다.\n취향이 비슷했던 자매는 동시에 한 남자를 사랑하게 되었다고 하는데…
+    </string>
+
+    <string name="urza_boss_type">0</string>
+    <string name="urza_level">8</string>
+    <string name="urza_type">
+        @string/beast_type
+    </string>
+    <string name="urza_desc">
+        굽이치는 협곡에서 날뛰며 늑대잡이들을 곤란하게 하는 거대한 야생 곰이다.\n화가 나면 통나무를 닥치는 대로 휘두르며 화풀이를 해대니 그 앞에서는 죽은 척도 소용없다.\n어릴 때는 이렇게까지 난폭하지 않았다고 하는데...
+    </string>
+
+    <string name="giant_lavaeye_boss_type">0</string>
+    <string name="giant_lavaeye_level">30</string>
+    <string name="giant_lavaeye_type">
+        @string/beast_type
+    </string>
+    <string name="giant_lavaeye_desc">
+        상당히 얼빠진 생김새를 한 거대한 도마뱀으로, 뜨거운 용암지대에서만 살 수 있다.\n라바아이는 지각 변화로 인해 용암 동굴에 고립된 거대 도마뱀의 일종이 생존을 위해 진화한 것으로 여겨지지만, 그 진짜 기원은 아무도 알아낼 수 없었다고 한다. 이러한 라바아이 중에서도 가장 거대한 덩치를 자랑하는 자이언트 라바아이는 특히 신비로운 존재이다.\n자이언트 라바아이의 끈적한 용암 꼬리에 따귀를 맞은 사람 중 온전히 살아남은 이는 극소수라고.
+    </string>
+
+    <string name="giant_turtle_boss_type">1</string>
+    <string name="giant_turtle_level">18</string>
+    <string name="giant_turtle_type">
+        @string/divinity_type
+    </string>
+    <string name="giant_turtle_desc">
+        자신들의 삶을 꾸리며 평온한 나날을 보내던 바닷속 생물들이 언젠가부터 구토와 어지러움을 호소하며 하나둘씩 병에 걸리기 시작했다. 바로 커닝시티를 중심으로 한 지역에서 오수, 폐수를 바다에 마구 흘려보냈기 때문. 바다와 강이 오염되기 시작했고, 이 오염은 인간의 손길이 닿지 않을 만큼 깊은 바닷속까지 미치며 점점 더 심해질 뿐이었다.\n급기야 심해에서 살고 있던 생물 중 거대한 크기와 힘을 자랑하는 몇몇 나이 많은 거북들이 지상으로 올라와 인간들에게 저항하기 시작했는데, 이가 바로 자이언트 터틀이다. 자이언트 터틀은 오염의 영향을 피하지 못하고 병에 걸려 유독한 물질의 토사물을 뱉기 때문에 반드시 피하는 것이 좋다.\n자이언트 터틀은 분명 인간들에게 피해를 주고 있지만, 삶의 터전을 지키기 위해 필사적인 이들을 마냥 욕할 수는 없지 않을까?
+    </string>
+
+    <string name="last_bajar_boss_type">2</string>
+    <string name="last_bajar_level">30</string>
+    <string name="last_bajar_type">
+        @string/spirit_type
+    </string>
+    <string name="last_bajar_desc">
+        바야르 산을 성지로 여긴 고대인들의 지혜를 품고 만들어진 돌 거인.\n신성한 바야르 산맥의 봉우리 중 하나였던 바슈타이 봉우리를 지키고 있는 것으로 알려져 있다.
+    </string>
+
+    <string name="frankenette_boss_type">0</string>
+    <string name="frankenette_level">26</string>
+    <string name="frankenette_type">
+        @string/undead_type
+    </string>
+    <string name="frankenette_desc">
+        끔찍하게 부릅뜬 표정을 하고 있으며, 옷이나 머리카락도 헤져 있어 섬뜩한 분위기를 자아낸다.\n매드오네뜨와 비슷한 듯 보이지만 그보다 훨씬 공포스러운 모습이다. 끔찍해진 자신의 모습을 알고 있기라도 한 듯, 주로 어둡고 습한 곳에서 어린 소녀의 목소리를 흉내내 사람들을 꾀어 놀아달라고 조른다.
+    </string>
+
+    <string name="hemokan_boss_type">2</string>
+    <string name="hemokan_level">28</string>
+    <string name="hemokan_type">
+        @string/divinity_type
+    </string>
+    <string name="hemokan_desc">
+        빅토리아 아일랜드에 일어난 급격한 지각변동 때문에 엘리니아와 그 주변 역의 지반이 아래로 내려앉는 일이 발생했다. 이 주변 일대에서 가장 아름다운 요정으로 유명했던 아리엘은 이 사고로 인해 외모의 변화가 일어나 흑요정이 되어 버렸다. 그녀는 다른 요정들과 다른 모습으로 변해버린 스스로의 비참한 운명에 앙심을 품고 물기둥을 솟구쳐올려 거대한 폭포를 일으켰다. 자신의 아름다움을 되찾을 수 없다면 다른 이의 아름다움도 두고 볼 수 없다는 마음에 휩싸여 어둠의 씨앗을 뿌려 잠들어 있던 흉포한 감시병 해모칸을 깨워낸 것이다.\n이 황소 괴물은 주체할 수 없는 분노에 휩싸이면 거대해진 망치를 마구 휘두르며 파괴적인 본능을 표출한다.\n어지간한 실력으로는 그의 몸에 작은 상처 하나 내기 어려울 수도 있다.
+    </string>
+</resources>

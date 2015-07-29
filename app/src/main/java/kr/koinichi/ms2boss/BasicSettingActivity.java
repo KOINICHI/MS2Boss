@@ -25,13 +25,24 @@ public class BasicSettingActivity extends PreferenceActivity {
     }
 
     public static class BasicSettingFragment extends PreferenceFragment {
+
+        SharedPreferences sp;
+        ListPreference sort_by;
+        ListPreference time_format;
+        Preference show_flag;
+        Preference noti_flag;
+
         @Override
         public void onCreate(final Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             addPreferencesFromResource(R.xml.preferences);
+            sp = getPreferenceManager().getSharedPreferences();
 
+            sort_by = (ListPreference) findPreference("pref_sort_by");
+            time_format = (ListPreference) findPreference("pref_time_format");
+            show_flag = (Preference) findPreference("pref_show_setting");
+            noti_flag = (Preference) findPreference("pref_noti_setting");
 
-            Preference show_flag = (Preference) findPreference("pref_show_setting");
             show_flag.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
                 public boolean onPreferenceClick(Preference preference) {
                     Intent i = new Intent(getActivity(), ShowFlagSettingActivity.class);
@@ -40,8 +51,6 @@ public class BasicSettingActivity extends PreferenceActivity {
                 }
             });
 
-
-            Preference noti_flag = (Preference) findPreference("pref_noti_setting");
             noti_flag.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
                 public boolean onPreferenceClick(Preference preference) {
                     Intent i = new Intent(getActivity(), NotiFlagSettingActivity.class);
