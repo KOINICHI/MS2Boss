@@ -59,7 +59,7 @@ public class SimpleBoss {
                 }
                 else {
                     sb.append(next_spawn_in);
-                    sb.append(c.getString(next_spawn_in == 1 ? R.string.minutes_before_singular : R.string.minutes_later));
+                    sb.append(c.getString(next_spawn_in == 1 ? R.string.minutes_later_singular : R.string.minutes_later));
                 }
             }
             sb.append(" ");
