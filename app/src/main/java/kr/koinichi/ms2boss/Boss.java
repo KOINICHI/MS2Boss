@@ -41,7 +41,6 @@ public class Boss {
     private int notified_already;
 
 
-    // bosses.add(new Boss(R.string.baraha, 24, R.string.baraha_loc, R.drawable.baraha, R.array.baraha, R.string.elite_boss));
     public Boss(String id) {
         Context c = BossTimer.getContext();
         this.name = c.getString(c.getResources().getIdentifier(id, "string", BossTimer.packageName));
@@ -54,6 +53,7 @@ public class Boss {
 
         this.level = Integer.parseInt(c.getString(c.getResources().getIdentifier(id + "_level", "string", BossTimer.packageName)));
         this.boss_type = Integer.parseInt(c.getString(c.getResources().getIdentifier(id + "_boss_type", "string", BossTimer.packageName)));
+
 
         int time = c.getResources().getIdentifier(id + "_time", "array", BossTimer.packageName);
         this.spawn_times = new ArrayList<>(Arrays.asList(c.getResources().getStringArray(time)));

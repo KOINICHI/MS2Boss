@@ -215,4 +215,157 @@
     <string name="hemokan_desc">
         빅토리아 아일랜드에 일어난 급격한 지각변동 때문에 엘리니아와 그 주변 역의 지반이 아래로 내려앉는 일이 발생했다. 이 주변 일대에서 가장 아름다운 요정으로 유명했던 아리엘은 이 사고로 인해 외모의 변화가 일어나 흑요정이 되어 버렸다. 그녀는 다른 요정들과 다른 모습으로 변해버린 스스로의 비참한 운명에 앙심을 품고 물기둥을 솟구쳐올려 거대한 폭포를 일으켰다. 자신의 아름다움을 되찾을 수 없다면 다른 이의 아름다움도 두고 볼 수 없다는 마음에 휩싸여 어둠의 씨앗을 뿌려 잠들어 있던 흉포한 감시병 해모칸을 깨워낸 것이다.\n이 황소 괴물은 주체할 수 없는 분노에 휩싸이면 거대해진 망치를 마구 휘두르며 파괴적인 본능을 표출한다.\n어지간한 실력으로는 그의 몸에 작은 상처 하나 내기 어려울 수도 있다.
     </string>
+    
+    <string name="mano_boss_type">0</string>
+    <string name="mano_level">37</string>
+    <string name="mano_type">
+        @string/divinity_type
+    </string>
+    <string name="mano_desc">
+        언제 태어났을 지 짐작조차 되지 않는 거대한 덩치의 늙은 달팽이이다.\n늘어뜨린 긴 수염, 이끼와 식물이 자란 등껍질을 짊어지고 이른 아침이면 이슬을 핥기 위해 천천히 산책하는데 실제로는 그보다는 더 빨리 기어다닐 수 있다고...\n나이가 많은 만큼 경험이 풍부해 일반 달팽이 몬스터들은 상상도 못할 다양한 공격을 할 수 있다는 정보가 있다. 씨앗, 꽃가루를 뿌리거나 거대한 껍질을 이용한 음파를 날리기도 한다. 
+    </string>
+    
+    <string name="windrunner_lapeng_boss_type">0</string>
+    <string name="windrunner_lapeng_level">38</string>
+    <string name="windrunner_lapeng_type">
+        @string/spirit_type
+    </string>
+    <string name="windrunner_lapeng_desc">
+        토끼인 듯 아닌 듯 범상치 않은 녀석이다.\n바람을 자유자재로 다루는 이 녀석의 비밀을 밝히기 위해 많은 모험가들이 녀석에게 도전장을 내밀었지만, 다들 바람술사 라팽이 소환한 바람술에 발이 묶여 농락당하고 말았다고 한다. 
+    </string>
+    
+    <string name="summoner_latoon_boss_type">0</string>
+    <string name="summoner_latoon_level">40</string>
+    <string name="summoner_latoon_type">
+        @string/spirit_type
+    </string>
+    <string name="summoner_latoon_desc">
+        사냥꾼이 설치한 덫에 걸려 고통 속에서 죽어가던 평범한 토끼.\n\n의식을 잃어가던 중 누군가가 나타났고, 토끼가 정신을 차렸을 때는 목 언저리에 신비한 힘을 지닌 목걸이가 걸려 있었을 뿐이었다. \n\n소환술사 라툰은 아직도 덫에 걸려 몇 날 며칠 동안 고통스러운 숨을 이어가던 일을 잊지 못하고 인간들을 공격한다.\n간신히 살아남은 생존자는 소환술사 라툰이 일반인은 상대도 할 수 없는 강력한 몬스터를 소환하며, 소환한 몬스터가 더 많은 인간들을 해칠 수 있도록 마법으로 보조한다고 증언했다.\n\n소환술사 라툰은 때로 자신을 살려주고 복수할 수 있는 힘을 준 이가 누구인지, 만나게 되면 어떻게 은혜를 갚아야 할지 골똘히 생각하곤 한다. 
+    </string>
+    
+    <string name="stumpy_boss_type">0</string>
+    <string name="stumpy_level">34</string>
+    <string name="stumpy_type">
+        @string/undead_type
+    </string>
+    <string name="stumpy_desc">
+        선대 마법사들의 영혼을 계승받는 날, 마법사 지망생 중 유일하게 부활 마법을 사용할 줄 알았던 유망한 학생 스텀피는 의식에 들어갈 준비를 하고 있었다.\n이 때, 나무통 속에 숨은 사악한 기운이 순식간에 스텀피를 자신이 숨어있던 나무통 속으로 끌고 들어갔다. 영혼 계승을 통해 환생을 꾀하는 그림자술사 쉐던이 나무통 속에 숨어 기회를 엿보고 있었던 것이다. 정반대의 힘을 가진 빛과 어둠의 마법이 충돌하며, 결국 이 둘은 나무 속에 영혼이 봉인되고 말았다.\n나무 속에 봉인되어 버린 영혼은 난폭한 나무 괴물로 다시 태어났고, 마법사들은 그를 한맺힌 나무 괴물 스텀피라고 부르고 있다. 
+    </string>
+    
+    <string name="urpanda_boss_type">0</string>
+    <string name="urpanda_level">40</string>
+    <string name="urpanda_type">
+        @string/beast_type
+    </string>
+    <string name="urpanda_desc">
+        커다란 대나무를 둘러메고 다니는 판다. 대나무를 휘두르는 그 힘도 엄청나지만 몸도 빨라 상대하기 쉽지 않다. 그를 쉽게 보고 건드렸다간 비처럼 내려꽂히는 대나무 창살을 피할 수 없을 것이다. 
+    </string>
+    
+    <string name="zombie_mushmom_boss_type">0</string>
+    <string name="zombie_mushmom_level">32</string>
+    <string name="zombie_mushmom_type">
+        @string/undead_type
+    </string>
+    <string name="zombie_mushmom_desc">
+        이마에 붙은 부적 때문에 강력한 어둠의 힘을 품게 된 거대 버섯이다.\n누가, 어떤 목적으로 부적을 붙였을까? 자극적인 기사를 내보내는 잡지에서는 이 부적에 깃든 악령이 버섯의 영혼을 지배하고 있다고 하고, 어느 학자는 단순히 죽은 버섯에 부적을 붙여 되살린 질 나쁜 주술이라고 하기도 한다.\n\n좀비머쉬맘이 날리는 부적을 맞을 시 움직일 수 없게 되니 근처를 지나가는 사람들의 주의가 요망된다. 
+    </string>
+    
+    <string name="king_slime_boss_type">0</string>
+    <string name="king_slime_level">35</string>
+    <string name="king_slime_type">
+        @string/spirit_type
+    </string>
+    <string name="king_slime_desc">
+        슬라임들이 킹슬라임의 거대한 몸집과 파괴력에 반해 그를 왕으로 추대했다.\n왕관을 쓰고 있어 일반 슬라임과의 구분이 쉽다. 부하 슬라임들을 불러내 침입자들을 처리하도록 명령하기도 하는데, 충성스럽게 따르는 것을 보면 꽤 선정을 펼치는 모양이다...?\n\n묵직한 점프와 충격파 공격은 물론, 가까이 있는 적의 몸을 작게 만들어 버리는 신비한 능력이 있다.\n\n킹슬라임을 쓰러뜨리면 특유의 향이 강한 젤리를 얻을 수 있는데 이것이 마니아들 사이에서 꽤 인기가 있다는 듯. 킹슬라임을 쓰러뜨리는 것은 상당히 힘겨운 일이기 때문에 킹슬라임의 동굴 바위에 묻어 있는 찌꺼기를 통해 채취하는 것이 일반적이다. 관계자는 이 희소성때문에 킹슬라임의 젤리가 더 인기있다고 한다. 
+    </string>
+    
+    <string name="relnos_boss_type">1</string>
+    <string name="relnos_level">40</string>
+    <string name="relnos_type">
+        @string/divinity_type
+    </string>
+    <string name="relnos_desc">
+        엘리니아 깊은 숲, 커다란 나무 뿌리 속에 봉인되었던 켈베로스족.\n흑마법을 다룬다는 이유로 대마법사 아시모프를 비롯한 요정들에게 밀려나 깊은 숲 어둠 속에서 재기를 노리던 마녀 마마모시는 잠들었던 레르노스를 깨워 자신의 충복으로 삼았다. 소식을 들은 대마법사 아시모프와 요정들이 급히 그들을 찾아 헤맸지만, 끝내 찾을 수 없었다. \n그리고, 최근 퍼플 문 캐슬 안 덤불이 우거진 정원에 그들이 나타나기 시작했다.\n레르노스는 3개의 머리로 많은 이들을 한꺼번에 물어 내동댕이치고 저주에 걸리게 한다. 저주에 당한 이가 마녀 마마모시를 만나면 위험에 빠질 수 있다고 한다. 
+    </string>
+    
+    <string name="roro_n_mumus_boss_type">1</string>
+    <string name="roro_n_mumus_level">32</string>
+    <string name="roro_n_mumus_type">
+        @string/divinity_type
+    </string>
+    <string name="roro_n_mumus_desc">
+        엘리니아 숲 속에서 자연을 아끼고 사랑하며 평화롭게 지내던 거인, 무무스. \n지금은 로로의 꾐에 빠져 요정들을 공격하고 있다.\n로로가 무무스를 꾄 이유는 바로… 평소 콤플렉스인 얼굴을 바꾸기 위해!\n숲속의 마녀 라카엘이 로로에게 대마법사 아시모프가 지닌 세계수의 씨앗이 있으면 얼굴을 바꿀 수 있는 묘약을 만들 수 있다고 미심쩍은 말을 했고, 로로는 이 말을 믿은 것이다.\n도대체 가면 뒤 얼굴이 어떻기에 이런 엉뚱한 일을 벌이는 것인지...\n숲 속에 살던 거인이라 그런지 맹독, 나무뿌리 등 자연을 이용하기도 하므로 로로와 무무스를 설득하러 갈 모험가들은 여기에 대비할 것. 
+    </string>
+    
+    <string name="bajar_gatekeeper_boss_type">1</string>
+    <string name="bajar_gatekeeper_level">35</string>
+    <string name="bajar_gatekeeper_type">
+        @string/spirit_type
+    </string>
+    <string name="bajar_gatekeeper_desc">
+        바야르 산을 성지로 여긴 고대인들의 지혜를 품고 만들어진 돌 거인.\n고대인들은 사라진 지 오래지만 메이플 월드 곳곳에서 돌 거인 바야르들은 그 모습을 드러내며 그들이 건재함을 과시하고 있다. \n\n무겁고 둔한 몸이지만 화가 나면 미쳐 날뛰는 야수처럼 광폭해 진다고 한다. 
+    </string>
+    
+    <string name="furious_baphomet_boss_type">1</string>
+    <string name="furious_baphomet_level">40</string>
+    <string name="furious_baphomet_type">
+        @string/devil_type
+    </string>
+    <string name="furious_baphomet_desc">
+        사악한 바포메트 삼형제 중 가장 철이 없고 다혈질인 분노의 바포메트는 괴성을 지르며 주변의 모든 것을 파괴한다. 분노의 바포메트가 뿜어내는 사악한 그림자 독기에 그와 맞서 싸우던 모험가들은 맥없이 쓰러지고, 이 사악한 괴물은 모험가에게 거대한 검을 가차없이 휘두른다고 한다. 
+    </string>
+    
+    <string name="alpha_turtle_boss_type">1</string>
+    <string name="alpha_turtle_level">40</string>
+    <string name="alpha_turtle_type">
+        @string/divinity_type
+    </string>
+    <string name="alpha_turtle_desc">
+        자이언트 터틀 보다 강한 힘을 지닌 반백년은 족히 살았을 것 같은 바다 거북. \n삶의 터전인 바다를 오염시켜 놓고도 잘못인 줄도 모르는 인간들에게 환멸을 느끼고 분풀이를 시작했다. \n\n반백년 장수의 비결은 위기에 처할 때마다 스스로 치유할 수 있는 신비한 능력 때문인 것 같다 
+    </string>
+    
+    <string name="captain_mock_boss_type">2</string>
+    <string name="captain_mock_level">40</string>
+    <string name="captain_mock_type">
+        @string/beast_type
+    </string>
+    <string name="captain_mock_desc">
+        언젠가부터 리스항구 먼 바다에서 크고 작은 선박들이 실종되는 사건이 잇따르고 있다.\n배에 타고 있던 선원들은 물론 부서진 잔해조차 발견할 수 없어 대부분 미제로 남겨진 와중에 먼 바다를 떠도는 유령 해적선에 대한 소문이 퍼져 나가기 시작했다.\n출처를 알 수 없는 목격담에 따르면 이 유령 해적선을 지배하고 있는 자는 스스로를 \'캡틴 모크\'라 칭하는 바다의 괴수라고 한다.\n캡틴 모크는 유령 선원들과 함께 주변 해안을 점령하고 섣불리 접근한 자들은 잔인하게 짓밟는 것으로 알려져 있어 해안가에 터전을 잡은 주민들은 유령 해적선 공포 괴담에 불안에 떨고 있다고 한다.
+    </string>
+    
+    <string name="pamokan_boss_type">2</string>
+    <string name="pamokan_level">40</string>
+    <string name="pamokan_type">
+        @string/divinity_type
+    </string>
+    <string name="pamokan_desc">
+        빅토리아 아일랜드 곳곳에 원인을 알 수 없는 화재와 끓어오르는 용암천이 출현하기 시작했고, 그 원인을 추적하던 여러 학자와 사제들은 고대에 존재했다던 불의 집행자 파모칸이 부활했다는 사실을 알게 되었다. \n화염의 망치로 거대한 바람을 일으켜 불꽃을 사방으로 날려보내는 이 커다란 괴물은, 꺼지지 않는 불씨의 심장부에서 도전자들을 기다리고 있다고 한다.
+    </string>
+    
+    <string name="papulatus_boss_type">2</string>
+    <string name="papulatus_level">40</string>
+    <string name="papulatus_type">
+        @string/machine_type
+    </string>
+    <string name="papulatus_desc">
+        메이플 월드에서 가장 크다는, 시계탑 광장 한가운데 우뚝 선 시계탑의 지하에 출몰하고 있다는 정체불명의 괴생명체.\n어느 날 갑자기 이 곳의 시계가 멈춰 버린 이유와 모종의 관계가 있을지도 모른다는 소문이 있다.
+    </string>
+    
+    <string name="horus_boss_type">2</string>
+    <string name="horus_level">39</string>
+    <string name="horus_type">
+        @string/divinity_type
+    </string>
+    <string name="horus_desc">
+        바야르 산맥 꼭대기에서 깨어난 그리폰 종족의 우두머리.\n소수밖에 존재하지 않는 자기 종족에 대한 사랑이 지극하고 자상한 호루스는 어리석은 인간으로 인해 닥친 그리폰 부부의 불행에 크게 슬퍼하였다. 호루스는 슬픔으로 인해 미쳐버린 그리폰과 그리피나에게 책임감을 느끼고, 고대부터 자신들을 숭배했던 인간들의 배신에 대한 복수를 맹세했다. \n\n가장 강력하고 치명적인 그리폰 종족의 우두머리로, 한번 날아오르면 인간들이 절대 피할 수 없는 강력한 폭발 공격을 가하기도 한다.
+    </string>
+    
+    <string name="chaos_baphomet_boss_type">2</string>
+    <string name="chaos_baphomet_level">40</string>
+    <string name="chaos_baphomet_type">
+        @string/devil_type
+    </string>
+    <string name="chaos_baphomet_desc">
+        사악한 바포메트 삼형제 중 둘째이다. \n바포메트 삼형제는 마왕의 명령을 받고 세계 곳곳을 위협한 하수인들 중 한 무리로, 혼돈의 바포메트는 어둠과 사악한 기운이 가득해 이름 있는 용사들도 함부로 접근하지 못했다고 한다. 바포메트 형제는 주변의 생명체를 오염시키는 그림자 독기를 뿜어내는 것은 물론 영혼을 흡수하여 자신들의 힘으로 만들어 더 많은 파괴를 일삼았으며 사람들을 악령에 씌워 힘을 잃게 만들기도 하였다. \n\n삼형제가 재미삼아 죄 없는 이들을 상대로 힘 겨루기를 했다는 속설이 있는데, 형제 중 첫째와 둘째는 아직 미숙한 셋째와 달리 악령이 씐 사람들의 영혼을 흡수함으로써 그들을 빈사상태로 만들 수 있었다고 한다.
+    </string>
 </resources>

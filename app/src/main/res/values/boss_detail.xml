@@ -191,4 +191,140 @@
     </string>
     <string name="hemokan_desc">
     </string>
+    
+    <string name="mano_boss_type">0</string>
+    <string name="mano_level">37</string>
+    <string name="mano_type">
+        @string/divinity_type
+    </string>
+    <string name="mano_desc">
+    </string>
+    
+    <string name="windrunner_lapeng_boss_type">0</string>
+    <string name="windrunner_lapeng_level">38</string>
+    <string name="windrunner_lapeng_type">
+        @string/spirit_type
+    </string>
+    <string name="windrunner_lapeng_desc">
+    </string>
+    
+    <string name="summoner_latoon_boss_type">0</string>
+    <string name="summoner_latoon_level">40</string>
+    <string name="summoner_latoon_type">
+        @string/spirit_type
+    </string>
+    <string name="summoner_latoon_desc">
+    </string>
+    
+    <string name="stumpy_boss_type">0</string>
+    <string name="stumpy_level">34</string>
+    <string name="stumpy_type">
+        @string/undead_type
+    </string>
+    <string name="stumpy_desc">
+    </string>
+    
+    <string name="urpanda_boss_type">0</string>
+    <string name="urpanda_level">40</string>
+    <string name="urpanda_type">
+        @string/beast_type
+    </string>
+    <string name="urpanda_desc">
+    </string>
+    
+    <string name="zombie_mushmom_boss_type">0</string>
+    <string name="zombie_mushmom_level">32</string>
+    <string name="zombie_mushmom_type">
+        @string/undead_type
+    </string>
+    <string name="zombie_mushmom_desc">
+    </string>
+    
+    <string name="king_slime_boss_type">0</string>
+    <string name="king_slime_level">35</string>
+    <string name="king_slime_type">
+        @string/spirit_type
+    </string>
+    <string name="king_slime_desc">
+    </string>
+    
+    <string name="relnos_boss_type">1</string>
+    <string name="relnos_level">40</string>
+    <string name="relnos_type">
+        @string/divinity_type
+    </string>
+    <string name="relnos_desc">
+    </string>
+    
+    <string name="roro_n_mumus_boss_type">1</string>
+    <string name="roro_n_mumus_level">32</string>
+    <string name="roro_n_mumus_type">
+        @string/divinity_type
+    </string>
+    <string name="roro_n_mumus_desc">
+    </string>
+    
+    <string name="bajar_gatekeeper_boss_type">1</string>
+    <string name="bajar_gatekeeper_level">35</string>
+    <string name="bajar_gatekeeper_type">
+        @string/spirit_type
+    </string>
+    <string name="bajar_gatekeeper_desc">
+    </string>
+    
+    <string name="furious_baphomet_boss_type">1</string>
+    <string name="furious_baphomet_level">40</string>
+    <string name="furious_baphomet_type">
+        @string/devil_type
+    </string>
+    <string name="furious_baphomet_desc">
+    </string>
+    
+    <string name="alpha_turtle_boss_type">1</string>
+    <string name="alpha_turtle_level">40</string>
+    <string name="alpha_turtle_type">
+        @string/divinity_type
+    </string>
+    <string name="alpha_turtle_desc">
+    </string>
+    
+    <string name="captain_mock_boss_type">2</string>
+    <string name="captain_mock_level">40</string>
+    <string name="captain_mock_type">
+        @string/beast_type
+    </string>
+    <string name="captain_mock_desc">
+    </string>
+    
+    <string name="pamokan_boss_type">2</string>
+    <string name="pamokan_level">40</string>
+    <string name="pamokan_type">
+        @string/divinity_type
+    </string>
+    <string name="pamokan_desc">
+    </string>
+    
+    <string name="papulatus_boss_type">2</string>
+    <string name="papulatus_level">40</string>
+    <string name="papulatus_type">
+        @string/machine_type
+    </string>
+    <string name="papulatus_desc">
+    </string>
+    
+    <string name="horus_boss_type">2</string>
+    <string name="horus_level">39</string>
+    <string name="horus_type">
+        @string/divinity_type
+    </string>
+    <string name="horus_desc">
+    </string>
+    
+    <string name="chaos_baphomet_boss_type">2</string>
+    <string name="chaos_baphomet_level">40</string>
+    <string name="chaos_baphomet_type">
+        @string/devil_type
+    </string>
+    <string name="chaos_baphomet_desc">
+    </string>
 </resources>

@@ -16,6 +16,26 @@
         <item>raid boss</item>
     </string-array>
 
+    <string-array name="captain_mock_time">
+        <item>raid boss</item>
+    </string-array>
+
+    <string-array name="pamokan_time">
+        <item>raid boss</item>
+    </string-array>
+
+    <string-array name="papulatus_time">
+        <item>raid boss</item>
+    </string-array>
+
+    <string-array name="horus_time">
+        <item>raid boss</item>
+    </string-array>
+
+    <string-array name="chaos_baphomet_time">
+        <item>raid boss</item>
+    </string-array>
+
     <string-array name="griffon_time">
         <item>0015</item>
         <item>0145</item>
@@ -157,6 +177,125 @@
         <item>2105</item>
         <item>2235</item>
     </string-array>
+    
+    <string-array name="alpha_turtle_time">
+        <item>0010</item>
+        <item>0140</item>
+        <item>0310</item>
+        <item>0440</item>
+        <item>0610</item>
+        <item>0740</item>
+        <item>0910</item>
+        <item>1040</item>
+
+        <item>1210</item>
+        <item>1310</item>
+        <item>1410</item>
+        <item>1510</item>
+        <item>1610</item>
+        <item>1710</item>
+        <item>1810</item>
+        <item>1910</item>
+        <item>2010</item>
+        <item>2110</item>
+        <item>2240</item>
+    </string-array>
+    
+    <string-array name="bajar_gatekeeper_time">
+        <item>0035</item>
+        <item>0205</item>
+        <item>0335</item>
+        <item>0505</item>
+        <item>0635</item>
+        <item>0805</item>
+        <item>0935</item>
+        <item>1105</item>
+
+        <item>1235</item>
+        <item>1335</item>
+        <item>1435</item>
+        <item>1535</item>
+        <item>1635</item>
+        <item>1735</item>
+        <item>1835</item>
+        <item>1935</item>
+        <item>2035</item>
+        <item>2135</item>
+        <item>2305</item>
+    </string-array>
+
+    
+    <string-array name="furious_baphomet_time">
+        <item>0005</item>
+        <item>0135</item>
+        <item>0305</item>
+        <item>0435</item>
+        <item>0605</item>
+        <item>0735</item>
+        <item>0905</item>
+        <item>1035</item>
+
+        <item>1205</item>
+        <item>1305</item>
+        <item>1405</item>
+        <item>1505</item>
+        <item>1605</item>
+        <item>1705</item>
+        <item>1805</item>
+        <item>1905</item>
+        <item>2005</item>
+        <item>2105</item>
+        <item>2235</item>
+    </string-array>
+
+    
+    <string-array name="relnos_time">
+        <item>0045</item>
+        <item>0215</item>
+        <item>0345</item>
+        <item>0515</item>
+        <item>0645</item>
+        <item>0815</item>
+        <item>0945</item>
+        <item>1115</item>
+
+        <item>1245</item>
+        <item>1345</item>
+        <item>1445</item>
+        <item>1545</item>
+        <item>1645</item>
+        <item>1745</item>
+        <item>1845</item>
+        <item>1945</item>
+        <item>2045</item>
+        <item>2145</item>
+        <item>2315</item>
+    </string-array>
+
+
+    <string-array name="roro_n_mumus_time">
+        <item>0005</item>
+        <item>0135</item>
+        <item>0305</item>
+        <item>0435</item>
+        <item>0605</item>
+        <item>0735</item>
+        <item>0905</item>
+        <item>1035</item>
+
+        <item>1205</item>
+        <item>1305</item>
+        <item>1405</item>
+        <item>1505</item>
+        <item>1605</item>
+        <item>1705</item>
+        <item>1805</item>
+        <item>1905</item>
+        <item>2005</item>
+        <item>2105</item>
+        <item>2235</item>
+    </string-array>
+
 
     <string-array name="chau_the_guard_time">
         <item>0005</item>
@@ -910,6 +1049,264 @@
         <item>2250</item>
         <item>2320</item>
     </string-array>
+    
+    <string-array name="mano_time">
+        <item>0015</item>
+        <item>0115</item>
+        <item>0215</item>
+        <item>0315</item>
+        <item>0415</item>
+        <item>0515</item>
+        <item>0615</item>
+        <item>0715</item>
+        <item>0815</item>
+        <item>0915</item>
+        <item>1015</item>
+        <item>1115</item>
+        <item>1215</item>
+        <item>1315</item>
+        <item>1345</item>
+        <item>1415</item>
+        <item>1445</item>
+        <item>1515</item>
+        <item>1545</item>
+        <item>1615</item>
+        <item>1645</item>
+        <item>1715</item>
+        <item>1745</item>
+        <item>1815</item>
+        <item>1845</item>
+        <item>1915</item>
+        <item>1945</item>
+        <item>2015</item>
+        <item>2045</item>
+        <item>2115</item>
+        <item>2145</item>
+        <item>2215</item>
+        <item>2245</item>
+        <item>2315</item>
+    </string-array>
 
+    <string-array name="windrunner_lapeng_time">
+        <item>0035</item>
+        <item>0135</item>
+        <item>0235</item>
+        <item>0335</item>
+        <item>0435</item>
+        <item>0535</item>
+        <item>0635</item>
+        <item>0735</item>
+        <item>0835</item>
+        <item>0935</item>
+        <item>1035</item>
+        <item>1135</item>
+        <item>1235</item>
+        <item>1305</item>
+        <item>1335</item>
+        <item>1405</item>
+        <item>1435</item>
+        <item>1505</item>
+        <item>1535</item>
+        <item>1605</item>
+        <item>1635</item>
+        <item>1705</item>
+        <item>1735</item>
+        <item>1805</item>
+        <item>1835</item>
+        <item>1905</item>
+        <item>1935</item>
+        <item>2005</item>
+        <item>2035</item>
+        <item>2105</item>
+        <item>2135</item>
+        <item>2205</item>
+        <item>2235</item>
+        <item>2305</item>
+    </string-array>
+
+    <string-array name="summoner_latoon_time">
+        <item>0055</item>
+        <item>0155</item>
+        <item>0255</item>
+        <item>0355</item>
+        <item>0455</item>
+        <item>0555</item>
+        <item>0655</item>
+        <item>0755</item>
+        <item>0855</item>
+        <item>0955</item>
+        <item>1055</item>
+        <item>1155</item>
+        <item>1255</item>
+        <item>1325</item>
+        <item>1355</item>
+        <item>1425</item>
+        <item>1455</item>
+        <item>1525</item>
+        <item>1555</item>
+        <item>1625</item>
+        <item>1655</item>
+        <item>1725</item>
+        <item>1755</item>
+        <item>1825</item>
+        <item>1855</item>
+        <item>1925</item>
+        <item>1955</item>
+        <item>2025</item>
+        <item>2055</item>
+        <item>2125</item>
+        <item>2155</item>
+        <item>2225</item>
+        <item>2255</item>
+        <item>2355</item>
+    </string-array>
+
+    <string-array name="stumpy_time">
+        <item>0005</item>
+        <item>0105</item>
+        <item>0205</item>
+        <item>0305</item>
+        <item>0405</item>
+        <item>0505</item>
+        <item>0605</item>
+        <item>0705</item>
+        <item>0805</item>
+        <item>0905</item>
+        <item>1005</item>
+        <item>1105</item>
+        <item>1205</item>
+        <item>1305</item>
+        <item>1335</item>
+        <item>1405</item>
+        <item>1435</item>
+        <item>1505</item>
+        <item>1535</item>
+        <item>1605</item>
+        <item>1635</item>
+        <item>1705</item>
+        <item>1735</item>
+        <item>1805</item>
+        <item>1835</item>
+        <item>1905</item>
+        <item>1935</item>
+        <item>2005</item>
+        <item>2035</item>
+        <item>2105</item>
+        <item>2135</item>
+        <item>2205</item>
+        <item>2235</item>
+        <item>2305</item>
+    </string-array>
+
+    <string-array name="urpanda_time">
+        <item>0010</item>
+        <item>0110</item>
+        <item>0210</item>
+        <item>0310</item>
+        <item>0410</item>
+        <item>0510</item>
+        <item>0610</item>
+        <item>0710</item>
+        <item>0810</item>
+        <item>0910</item>
+        <item>1010</item>
+        <item>1110</item>
+        <item>1210</item>
+        <item>1310</item>
+        <item>1340</item>
+        <item>1410</item>
+        <item>1440</item>
+        <item>1510</item>
+        <item>1540</item>
+        <item>1610</item>
+        <item>1640</item>
+        <item>1710</item>
+        <item>1740</item>
+        <item>1810</item>
+        <item>1840</item>
+        <item>1910</item>
+        <item>1940</item>
+        <item>2010</item>
+        <item>2040</item>
+        <item>2110</item>
+        <item>2140</item>
+        <item>2210</item>
+        <item>2240</item>
+        <item>2310</item>
+    </string-array>
+
+    <string-array name="zombie_mushmom_time">
+        <item>0025</item>
+        <item>0125</item>
+        <item>0225</item>
+        <item>0325</item>
+        <item>0425</item>
+        <item>0525</item>
+        <item>0625</item>
+        <item>0725</item>
+        <item>0825</item>
+        <item>0925</item>
+        <item>1025</item>
+        <item>1125</item>
+        <item>1225</item>
+        <item>1325</item>
+        <item>1355</item>
+        <item>1425</item>
+        <item>1455</item>
+        <item>1525</item>
+        <item>1555</item>
+        <item>1625</item>
+        <item>1655</item>
+        <item>1725</item>
+        <item>1755</item>
+        <item>1825</item>
+        <item>1855</item>
+        <item>1925</item>
+        <item>1955</item>
+        <item>2025</item>
+        <item>2055</item>
+        <item>2125</item>
+        <item>2155</item>
+        <item>2225</item>
+        <item>2255</item>
+        <item>2325</item>
+    </string-array>
+
+    <string-array name="king_slime_time">
+        <item>0045</item>
+        <item>0145</item>
+        <item>0245</item>
+        <item>0345</item>
+        <item>0445</item>
+        <item>0545</item>
+        <item>0645</item>
+        <item>0745</item>
+        <item>0845</item>
+        <item>0945</item>
+        <item>1045</item>
+        <item>1145</item>
+        <item>1245</item>
+        <item>1315</item>
+        <item>1345</item>
+        <item>1415</item>
+        <item>1445</item>
+        <item>1515</item>
+        <item>1545</item>
+        <item>1615</item>
+        <item>1645</item>
+        <item>1715</item>
+        <item>1745</item>
+        <item>1815</item>
+        <item>1845</item>
+        <item>1915</item>
+        <item>1945</item>
+        <item>2015</item>
+        <item>2045</item>
+        <item>2115</item>
+        <item>2145</item>
+        <item>2215</item>
+        <item>2245</item>
+        <item>2345</item>
+    </string-array>
 
 </resources>

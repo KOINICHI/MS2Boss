@@ -1,0 +1,22 @@
+<string-array name="bajar_gatekeepr">
+	<item>0035</item>
+	<item>0205</item>
+	<item>0335</item>
+	<item>0505</item>
+	<item>0635</item>
+	<item>0805</item>
+	<item>0935</item>
+	<item>1105</item>
+
+	<item>2435</item>
+	<item>1335</item>
+	<item>1435</item>
+	<item>1535</item>
+	<item>1635</item>
+	<item>1735</item>
+	<item>1835</item>
+	<item>1935</item>
+	<item>2035</item>
+	<item>2135</item>
+	<item>2305</item>
+</string-array>

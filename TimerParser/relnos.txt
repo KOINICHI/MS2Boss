@@ -1,0 +1,22 @@
+<string-array name="relnos">
+	<item>0045</item>
+	<item>0215</item>
+	<item>0345</item>
+	<item>0515</item>
+	<item>0645</item>
+	<item>0815</item>
+	<item>0945</item>
+	<item>1115</item>
+
+	<item>2445</item>
+	<item>1345</item>
+	<item>1445</item>
+	<item>1545</item>
+	<item>1645</item>
+	<item>1745</item>
+	<item>1845</item>
+	<item>1945</item>
+	<item>2045</item>
+	<item>2145</item>
+	<item>2315</item>
+</string-array>

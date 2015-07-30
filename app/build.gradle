@@ -8,8 +8,8 @@ android {
         applicationId "kr.koinichi.ms2bosstimer"
         minSdkVersion 14
         targetSdkVersion 22
-        versionCode 4
-        versionName "1.1.2"
+        versionCode 5
+        versionName "1.2"
     }
     buildTypes {
         release {

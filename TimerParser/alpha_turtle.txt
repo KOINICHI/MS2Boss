@@ -1,0 +1,22 @@
+<string-array name="alpha_turtle">
+	<item>0010</item>
+	<item>0140</item>
+	<item>0310</item>
+	<item>0440</item>
+	<item>0610</item>
+	<item>0740</item>
+	<item>0910</item>
+	<item>1040</item>
+
+	<item>2410</item>
+	<item>1310</item>
+	<item>1410</item>
+	<item>1510</item>
+	<item>1610</item>
+	<item>1710</item>
+	<item>1810</item>
+	<item>1910</item>
+	<item>2010</item>
+	<item>2110</item>
+	<item>2240</item>
+</string-array>

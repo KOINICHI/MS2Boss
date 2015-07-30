@@ -32,7 +32,7 @@
     <string name="noti_message">에 보스 몬스터가 출현합니다 :</string>
     
     <string name="field_boss">필드 보스</string>
-    <string name="raid_boss">레이드 보스</string>
+    <string name="raid_boss">던전 보스</string>
     <string name="elite_boss">엘리트</string>
     <string name="unknown_boss">알 수 없음</string>
     
@@ -84,6 +84,40 @@
     <string name="urza_loc">굽이치는 협곡</string>
     <string name="jirant">다크 지란트</string>
     <string name="jirant_loc">토드하라의 샘물</string>
+    <string name="mano">마노</string>
+    <string name="mano_loc">그리니아 폭포</string>
+    <string name="windrunner_lapeng">바람술사 라펭</string>
+    <string name="windrunner_lapeng_loc">녹아내린 정원</string>
+    <string name="summoner_latoon">소환술사 라툰</string>
+    <string name="summoner_latoon_loc">장미의 성</string>
+    <string name="stumpy">스텀피</string>
+    <string name="stumpy_loc">스위트 밸리</string>
+    <string name="urpanda">우르판다</string>
+    <string name="urpanda_loc">무지개 산</string>
+    <string name="zombie_mushmom">좀비머쉬맘</string>
+    <string name="zombie_mushmom_loc">개미굴 입구</string>
+    <string name="king_slime">킹슬라임</string>
+    <string name="king_slime_loc">신의 샘물방울</string>
+    <string name="relnos">레르노스</string>
+    <string name="relnos_loc">퍼플 문 캐슬</string>
+    <string name="roro_n_mumus">로로와 무무스</string>
+    <string name="roro_n_mumus_loc">바움나무</string>
+    <string name="bajar_gatekeeper">바야르 수문장</string>
+    <string name="bajar_gatekeeper_loc">깎은 절벽 요새</string>
+    <string name="furious_baphomet">분노의 바포메트</string>
+    <string name="furious_baphomet_loc">캐슬 리버스</string>
+    <string name="alpha_turtle">알파 터틀</string>
+    <string name="alpha_turtle_loc">엘루아 강가</string>
+    <string name="captain_mock">캡틴 모크</string>
+    <string name="captain_mock_loc">달빛선장의 요새</string>
+    <string name="pamokan">파모칸</string>
+    <string name="pamokan_loc">이그니코르</string>
+    <string name="papulatus">파풀라투스</string>
+    <string name="papulatus_loc">루디브리엄 시계탑</string>
+    <string name="horus">호루스</string>
+    <string name="horus_loc">호루스의 둥지</string>
+    <string name="chaos_baphomet">혼돈의 바포메트</string>
+    <string name="chaos_baphomet_loc">혼돈의 숲</string>
 
     <string name="human_type">인간형</string>
     <string name="divinity_type">신수형</string>
