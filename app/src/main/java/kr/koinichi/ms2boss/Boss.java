@@ -42,6 +42,7 @@ public class Boss {
 
 
     public Boss(String id) {
+        Log.d("KOINICHI", "Loading " + id);
         Context c = BossTimer.getContext();
         this.name = c.getString(c.getResources().getIdentifier(id, "string", BossTimer.packageName));
         this.location = c.getString(c.getResources().getIdentifier(id + "_loc", "string", BossTimer.packageName));

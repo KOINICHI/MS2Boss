@@ -35,6 +35,26 @@
     <string-array name="chaos_baphomet_time">
         <item>raid boss</item>
     </string-array>
+    
+    <string-array name="mark_omega_time">
+        <item>raid boss</item>
+    </string-array>
+
+    <string-array name="shushu_n_bubus_time">
+        <item>raid boss</item>
+    </string-array>
+
+    <string-array name="forgotten_bajar_time">
+        <item>raid boss</item>
+    </string-array>
+
+    <string-array name="piros_fadd_time">
+        <item>raid boss</item>
+    </string-array>
+
+    <string-array name="balrog_time">
+        <item>raid boss</item>
+    </string-array>
 
     <string-array name="griffon_time">
         <item>0015</item>
@@ -1307,6 +1327,336 @@
         <item>2215</item>
         <item>2245</item>
         <item>2345</item>
+    </string-array>
+
+    <string-array name="trauros_time">
+        <item>0030</item>
+        <item>0130</item>
+        <item>0230</item>
+        <item>0330</item>
+        <item>0430</item>
+        <item>0530</item>
+        <item>0630</item>
+        <item>0730</item>
+        <item>0830</item>
+        <item>0930</item>
+        <item>1030</item>
+        <item>1130</item>
+        <item>1300</item>
+        <item>1330</item>
+        <item>1400</item>
+        <item>1430</item>
+        <item>1500</item>
+        <item>1530</item>
+        <item>1600</item>
+        <item>1630</item>
+        <item>1700</item>
+        <item>1730</item>
+        <item>1800</item>
+        <item>1830</item>
+        <item>1900</item>
+        <item>1930</item>
+        <item>2000</item>
+        <item>2030</item>
+        <item>2100</item>
+        <item>2130</item>
+        <item>2330</item>
+    </string-array>
+
+    <string-array name="nine_cap_kappa_time">
+        <item>0005</item>
+        <item>0105</item>
+        <item>0205</item>
+        <item>0305</item>
+        <item>0405</item>
+        <item>0505</item>
+        <item>0605</item>
+        <item>0705</item>
+        <item>0805</item>
+        <item>0905</item>
+        <item>1005</item>
+        <item>1105</item>
+        <item>1305</item>
+        <item>1335</item>
+        <item>1405</item>
+        <item>1435</item>
+        <item>1505</item>
+        <item>1535</item>
+        <item>1605</item>
+        <item>1635</item>
+        <item>1705</item>
+        <item>1735</item>
+        <item>1805</item>
+        <item>1835</item>
+        <item>1905</item>
+        <item>1935</item>
+        <item>2005</item>
+        <item>2035</item>
+        <item>2105</item>
+        <item>2135</item>
+        <item>2305</item>
+    </string-array>
+
+    <string-array name="earthly_lavaknight_time">
+        <item>0015</item>
+        <item>0115</item>
+        <item>0215</item>
+        <item>0315</item>
+        <item>0415</item>
+        <item>0515</item>
+        <item>0615</item>
+        <item>0715</item>
+        <item>0815</item>
+        <item>0915</item>
+        <item>1015</item>
+        <item>1115</item>
+        <item>1315</item>
+        <item>1345</item>
+        <item>1415</item>
+        <item>1445</item>
+        <item>1515</item>
+        <item>1545</item>
+        <item>1615</item>
+        <item>1645</item>
+        <item>1715</item>
+        <item>1745</item>
+        <item>1815</item>
+        <item>1845</item>
+        <item>1915</item>
+        <item>1945</item>
+        <item>2015</item>
+        <item>2045</item>
+        <item>2115</item>
+        <item>2145</item>
+        <item>2315</item>
+    </string-array>
+
+    <string-array name="ursca_time">
+        <item>0015</item>
+        <item>0115</item>
+        <item>0215</item>
+        <item>0315</item>
+        <item>0415</item>
+        <item>0515</item>
+        <item>0615</item>
+        <item>0715</item>
+        <item>0815</item>
+        <item>0915</item>
+        <item>1015</item>
+        <item>1115</item>
+        <item>1315</item>
+        <item>1345</item>
+        <item>1415</item>
+        <item>1445</item>
+        <item>1515</item>
+        <item>1545</item>
+        <item>1615</item>
+        <item>1645</item>
+        <item>1715</item>
+        <item>1745</item>
+        <item>1815</item>
+        <item>1845</item>
+        <item>1915</item>
+        <item>1945</item>
+        <item>2015</item>
+        <item>2045</item>
+        <item>2115</item>
+        <item>2145</item>
+        <item>2315</item>
+    </string-array>
+
+    <string-array name="monte_de_carlo_time">
+        <item>0040</item>
+        <item>0140</item>
+        <item>0240</item>
+        <item>0340</item>
+        <item>0440</item>
+        <item>0540</item>
+        <item>0640</item>
+        <item>0740</item>
+        <item>0840</item>
+        <item>0940</item>
+        <item>1040</item>
+        <item>1140</item>
+        <item>1310</item>
+        <item>1340</item>
+        <item>1410</item>
+        <item>1440</item>
+        <item>1510</item>
+        <item>1540</item>
+        <item>1610</item>
+        <item>1640</item>
+        <item>1710</item>
+        <item>1740</item>
+        <item>1810</item>
+        <item>1840</item>
+        <item>1910</item>
+        <item>1940</item>
+        <item>2010</item>
+        <item>2040</item>
+        <item>2110</item>
+        <item>2140</item>
+        <item>2340</item>
+    </string-array>
+
+    <string-array name="phantom_destroyer_time">
+        <item>0010</item>
+        <item>0110</item>
+        <item>0210</item>
+        <item>0310</item>
+        <item>0410</item>
+        <item>0510</item>
+        <item>0610</item>
+        <item>0710</item>
+        <item>0810</item>
+        <item>0910</item>
+        <item>1010</item>
+        <item>1110</item>
+        <item>1310</item>
+        <item>1340</item>
+        <item>1410</item>
+        <item>1440</item>
+        <item>1510</item>
+        <item>1540</item>
+        <item>1610</item>
+        <item>1640</item>
+        <item>1710</item>
+        <item>1740</item>
+        <item>1810</item>
+        <item>1840</item>
+        <item>1910</item>
+        <item>1940</item>
+        <item>2010</item>
+        <item>2040</item>
+        <item>2110</item>
+        <item>2140</item>
+        <item>2310</item>
+    </string-array>
+
+    <string-array name="lerta_time">
+        <item>0055</item>
+        <item>0155</item>
+        <item>0255</item>
+        <item>0355</item>
+        <item>0455</item>
+        <item>0555</item>
+        <item>0655</item>
+        <item>0755</item>
+        <item>0855</item>
+        <item>0955</item>
+        <item>1055</item>
+        <item>1155</item>
+        <item>1325</item>
+        <item>1355</item>
+        <item>1425</item>
+        <item>1455</item>
+        <item>1525</item>
+        <item>1555</item>
+        <item>1625</item>
+        <item>1655</item>
+        <item>1725</item>
+        <item>1755</item>
+        <item>1825</item>
+        <item>1855</item>
+        <item>1925</item>
+        <item>1955</item>
+        <item>2025</item>
+        <item>2055</item>
+        <item>2125</item>
+        <item>2155</item>
+        <item>2355</item>
+    </string-array>
+
+    <string-array name="toto_n_gugus_time">
+        <item>0025</item>
+        <item>0155</item>
+        <item>0325</item>
+        <item>0455</item>
+        <item>0625</item>
+        <item>0755</item>
+        <item>0925</item>
+        <item>1055</item>
+
+        <item>1225</item>
+        <item>1325</item>
+        <item>1425</item>
+        <item>1525</item>
+        <item>1625</item>
+        <item>1725</item>
+        <item>1825</item>
+        <item>1925</item>
+        <item>2025</item>
+        <item>2125</item>
+        <item>2255</item>
+    </string-array>
+
+    <string-array name="pekanos_time">
+        <item>0055</item>
+        <item>0225</item>
+        <item>0355</item>
+        <item>0525</item>
+        <item>0655</item>
+        <item>0825</item>
+        <item>0955</item>
+        <item>1125</item>
+
+        <item>1255</item>
+        <item>1355</item>
+        <item>1455</item>
+        <item>1555</item>
+        <item>1655</item>
+        <item>1755</item>
+        <item>1855</item>
+        <item>1955</item>
+        <item>2055</item>
+        <item>2155</item>
+        <item>2325</item>
+    </string-array>
+
+    <string-array name="ikar_madd_time">
+        <item>0005</item>
+        <item>0135</item>
+        <item>0305</item>
+        <item>0435</item>
+        <item>0605</item>
+        <item>0735</item>
+        <item>0905</item>
+        <item>1035</item>
+
+        <item>1205</item>
+        <item>1305</item>
+        <item>1405</item>
+        <item>1505</item>
+        <item>1605</item>
+        <item>1705</item>
+        <item>1805</item>
+        <item>1905</item>
+        <item>2005</item>
+        <item>2105</item>
+        <item>2235</item>
+    </string-array>
+
+    <string-array name="coldblooded_baphomet_time">
+        <item>0015</item>
+        <item>0145</item>
+        <item>0315</item>
+        <item>0445</item>
+        <item>0615</item>
+        <item>0745</item>
+        <item>0915</item>
+        <item>1045</item>
+
+        <item>1215</item>
+        <item>1315</item>
+        <item>1415</item>
+        <item>1515</item>
+        <item>1615</item>
+        <item>1715</item>
+        <item>1815</item>
+        <item>1915</item>
+        <item>2015</item>
+        <item>2115</item>
+        <item>2245</item>
     </string-array>
 
 </resources>

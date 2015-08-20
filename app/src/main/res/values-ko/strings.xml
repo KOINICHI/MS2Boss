@@ -118,6 +118,40 @@
     <string name="horus_loc">호루스의 둥지</string>
     <string name="chaos_baphomet">혼돈의 바포메트</string>
     <string name="chaos_baphomet_loc">혼돈의 숲</string>
+    
+    
+    <string name="toto_n_gugus">토토와 구구스</string>
+    <string name="toto_n_gugus_loc">붉은 휘파람 절벽</string>
+    <string name="pekanos">페카노스</string>
+    <string name="pekanos_loc">상처입은 협곡</string>
+    <string name="coldblooded_baphomet">냉혈한 바포메트</string>
+    <string name="coldblooded_baphomet_loc">눈꽃 봉우리</string>
+    <string name="ikar_madd">이카르 마드</string>
+    <string name="ikar_madd_loc">아이스 크라운</string>
+    <string name="trauros">트라우로스</string>
+    <string name="trauros_loc">코로푸푸 절벽</string>
+    <string name="nine_cap_kappa">나인캡 카파</string>
+    <string name="nine_cap_kappa_loc">크로노프 철도역</string>
+    <string name="earthly_lavaknight">대지의 라바나이트</string>
+    <string name="earthly_lavaknight_loc">핑크하트의 스위트 캐슬</string>
+    <string name="ursca">우르스카</string>
+    <string name="ursca_loc">커넬 에너지 연구소</string>
+    <string name="monte_de_carlo">몬테 드 카를로</string>
+    <string name="monte_de_carlo_loc">루디션 카니발</string>
+    <string name="phantom_destroyer">팬텀 디스트로이어</string>
+    <string name="phantom_destroyer_loc">펜토마 사이보그 센터</string>
+    <string name="lerta">레르타</string>
+    <string name="lerta_loc">프로즌 라바홀</string>
+    <string name="mark_omega">마크52 오메가</string>
+    <string name="mark_omega_loc">트로닉스 벙커</string>
+    <string name="shushu_n_bubus">슈슈와 부부스</string>
+    <string name="shushu_n_bubus_loc">푸른 그림자 동굴</string>
+    <string name="forgotten_bajar">잊혀진 바야르</string>
+    <string name="forgotten_bajar_loc">바라스카 얼음굴</string>
+    <string name="piros_fadd">피로스 파드</string>
+    <string name="piros_fadd_loc">피라타로스</string>
+    <string name="balrog">발록</string>
+    <string name="balrog_loc">불멸의 신전</string>
 
     <string name="human_type">인간형</string>
     <string name="divinity_type">신수형</string>

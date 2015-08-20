@@ -1,0 +1,22 @@
+<string-array name="toto_n_gugus_time">
+	<item>0025</item>
+	<item>0155</item>
+	<item>0325</item>
+	<item>0455</item>
+	<item>0625</item>
+	<item>0755</item>
+	<item>0925</item>
+	<item>1055</item>
+
+	<item>1225</item>
+	<item>1325</item>
+	<item>1425</item>
+	<item>1525</item>
+	<item>1625</item>
+	<item>1725</item>
+	<item>1825</item>
+	<item>1925</item>
+	<item>2025</item>
+	<item>2125</item>
+	<item>2255</item>
+</string-array>

@@ -1,0 +1,22 @@
+<string-array name="ikar_madd_time">
+	<item>0005</item>
+	<item>0135</item>
+	<item>0305</item>
+	<item>0435</item>
+	<item>0605</item>
+	<item>0735</item>
+	<item>0905</item>
+	<item>1035</item>
+
+	<item>1205</item>
+	<item>1305</item>
+	<item>1405</item>
+	<item>1505</item>
+	<item>1605</item>
+	<item>1705</item>
+	<item>1805</item>
+	<item>1905</item>
+	<item>2005</item>
+	<item>2105</item>
+	<item>2235</item>
+</string-array>

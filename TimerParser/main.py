@@ -1,7 +1,8 @@
 ﻿import codecs
 
+
 def normalbosses():
-	BOSSES = ['alpha_turtle', 'bajar_gatekeepr', 'furious_baphomet', 'roro_n_mumus', 'relnos']
+	BOSSES = ['ikar_madd', 'coldblooded_baphomet', 'pekanos', 'toto_n_gugus']
 
 	def zero(s):
 		s = s.split()
@@ -26,11 +27,13 @@ def normalbosses():
 			f.write('\n');
 			for t in PM:
 				h,m = zero(t.encode('ascii', 'ignore').decode('utf-8'))
+				if int(h)>=12:
+					h = str(int(h)-12)
 				print (("%02d%2d")%(int(h)+12, int(m)))
 				f.write("\t<item>" + (("%02d%02d")%(int(h)+12, int(m))) + "</item>\n")
 			f.write("</string-array>\n")
 			f.close()
-normalbosses()
+
 
 def elitebosses():
 	def zero(s):
@@ -57,13 +60,14 @@ def elitebosses():
 			hr_from = times[0]
 			hr_end = times[1]
 			mins = times[2:]
-			for hr in range(int(hr_from), int(hr_end) + 1):
+			for hr in range(int(hr_from), int(hr_end)):
 				for min in mins:
 					f.write("\t<item>" + zero(str(hr)) + zero(min) + "</item>\n")			
 			idx += 1
 		f.write("</string-array>\n\n")
 	f.close()
-	
+elitebosses()
+
 def namenloc():
 	f = open('bossinfo.txt', 'r')
 	lines = f.read()

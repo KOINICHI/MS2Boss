@@ -281,7 +281,7 @@
     </string>
     
     <string name="alpha_turtle_boss_type">1</string>
-    <string name="alpha_turtle_level">40</string>
+    <string name="alpha_turtle_level">37</string>
     <string name="alpha_turtle_type">
         @string/divinity_type
     </string>
@@ -326,5 +326,133 @@
         @string/devil_type
     </string>
     <string name="chaos_baphomet_desc">
+    </string>
+    
+    <string name="toto_n_gugus_boss_type">1</string>
+    <string name="toto_n_gugus_level">43</string>
+    <string name="toto_n_gugus_type">
+        @string/divinity_type
+    </string>
+    <string name="toto_n_gugus_desc">
+    </string>
+    
+    <string name="pekanos_boss_type">1</string>
+    <string name="pekanos_level">47</string>
+    <string name="pekanos_type">
+        @string/divinity_type
+    </string>
+    <string name="pekanos_desc">
+    </string>
+    
+    <string name="coldblooded_baphomet_boss_type">1</string>
+    <string name="coldblooded_baphomet_level">50</string>
+    <string name="coldblooded_baphomet_type">
+        @string/devil_type
+    </string>
+    <string name="coldblooded_baphomet_desc">
+    </string>
+    
+    <string name="ikar_madd_boss_type">1</string>
+    <string name="ikar_madd_level">50</string>
+    <string name="ikar_madd_type">
+        @string/divinity_type
+    </string>
+    <string name="ikar_madd_desc">
+    </string>
+    
+    <string name="trauros_boss_type">0</string>
+    <string name="trauros_level">42</string>
+    <string name="trauros_type">
+        @string/divinity_type
+    </string>
+    <string name="trauros_desc">
+    </string>
+    
+    <string name="nine_cap_kappa_boss_type">0</string>
+    <string name="nine_cap_kappa_level">44</string>
+    <string name="nine_cap_kappa_type">
+        @string/machine_type
+    </string>
+    <string name="nine_cap_kappa_desc">
+    </string>
+    
+    <string name="earthly_lavaknight_boss_type">0</string>
+    <string name="earthly_lavaknight_level">46</string>
+    <string name="earthly_lavaknight_type">
+        @string/beast_type
+    </string>
+    <string name="earthly_lavaknight_desc">
+    </string>
+    
+    <string name="ursca_boss_type">0</string>
+    <string name="ursca_level">48</string>
+    <string name="ursca_type">
+        @string/beast_type
+    </string>
+    <string name="ursca_desc">
+    </string>
+    
+    <string name="monte_de_carlo_boss_type">0</string>
+    <string name="monte_de_carlo_level">50</string>
+    <string name="monte_de_carlo_type">
+        @string/devil_type
+    </string>
+    <string name="monte_de_carlo_desc">
+    </string>
+    
+    <string name="phantom_destroyer_boss_type">0</string>
+    <string name="phantom_destroyer_level">50</string>
+    <string name="phantom_destroyer_type">
+        @string/machine_type
+    </string>
+    <string name="phantom_destroyer_desc">
+    </string>
+    
+    <string name="lerta_boss_type">0</string>
+    <string name="lerta_level">50</string>
+    <string name="lerta_type">
+        @string/beast_type
+    </string>
+    <string name="lerta_desc">
+    </string>
+    
+    <string name="mark_omega_boss_type">2</string>
+    <string name="mark_omega_level">48</string>
+    <string name="mark_omega_type">
+        @string/machine_type
+    </string>
+    <string name="mark_omega_desc">
+    </string>
+    
+    <string name="shushu_n_bubus_boss_type">2</string>
+    <string name="shushu_n_bubus_level">50</string>
+    <string name="shushu_n_bubus_type">
+        @string/divinity_type
+    </string>
+    <string name="shushu_n_bubus_desc">
+    </string>
+    
+    <string name="forgotten_bajar_boss_type">2</string>
+    <string name="forgotten_bajar_level">50</string>
+    <string name="forgotten_bajar_type">
+        @string/spirit_type
+    </string>
+    <string name="forgotten_bajar_desc">
+    </string>
+    
+    <string name="piros_fadd_boss_type">2</string>
+    <string name="piros_fadd_level">50</string>
+    <string name="piros_fadd_type">
+        @string/divinity_type
+    </string>
+    <string name="piros_fadd_desc">
+    </string>
+    
+    <string name="balrog_boss_type">2</string>
+    <string name="balrog_level">50</string>
+    <string name="balrog_type">
+        @string/devil_type
+    </string>
+    <string name="balrog_desc">
     </string>
 </resources>

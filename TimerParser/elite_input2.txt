@@ -1,28 +1,28 @@
-mano 3
-0 12 15
-13 22 15 45
-23 24 15
-windrunner_lapeng 3
-0 12 35
-13 22 5 35
-23 24 5
-summoner_latoon 3
-0 12 55
-13 22 25 55
-23 24 55
-stumpy 3
+trauros 3
+0 12 30
+13 22 0 30
+23 24 30
+nine_cap_kappa 3
 0 12 5
 13 22 5 35
 23 24 5
-urpanda 3
+earthly_lavaknight 3
+0 12 15
+13 22 15 45
+23 24 15
+ursca 3
+0 12 15
+13 22 15 45
+23 24 15
+monte_de_carlo 3
+0 12 40
+13 22 10 40
+23 24 40
+phantom_destroyer 3
 0 12 10
 13 22 10 40
 23 24 10
-zombie_mushmom 3
-0 12 25
+relta 3
+0 12 55
 13 22 25 55
-23 24 25
-king_slime 3
-0 12 45
-13 22 15 45
-23 24 45
+23 24 55

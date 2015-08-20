@@ -1,0 +1,22 @@
+<string-array name="pekanos_time">
+	<item>0055</item>
+	<item>0225</item>
+	<item>0355</item>
+	<item>0525</item>
+	<item>0655</item>
+	<item>0825</item>
+	<item>0955</item>
+	<item>1125</item>
+
+	<item>1255</item>
+	<item>1355</item>
+	<item>1455</item>
+	<item>1555</item>
+	<item>1655</item>
+	<item>1755</item>
+	<item>1855</item>
+	<item>1955</item>
+	<item>2055</item>
+	<item>2155</item>
+	<item>2325</item>
+</string-array>

@@ -1,0 +1,22 @@
+<string-array name="coldblooded_baphomet_time">
+	<item>0015</item>
+	<item>0145</item>
+	<item>0315</item>
+	<item>0445</item>
+	<item>0615</item>
+	<item>0745</item>
+	<item>0915</item>
+	<item>1045</item>
+
+	<item>1215</item>
+	<item>1315</item>
+	<item>1415</item>
+	<item>1515</item>
+	<item>1615</item>
+	<item>1715</item>
+	<item>1815</item>
+	<item>1915</item>
+	<item>2015</item>
+	<item>2115</item>
+	<item>2245</item>
+</string-array>

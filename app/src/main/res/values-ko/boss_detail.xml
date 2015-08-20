@@ -316,7 +316,7 @@
     </string>
     
     <string name="alpha_turtle_boss_type">1</string>
-    <string name="alpha_turtle_level">40</string>
+    <string name="alpha_turtle_level">37</string>
     <string name="alpha_turtle_type">
         @string/divinity_type
     </string>
@@ -367,5 +367,149 @@
     </string>
     <string name="chaos_baphomet_desc">
         사악한 바포메트 삼형제 중 둘째이다. \n바포메트 삼형제는 마왕의 명령을 받고 세계 곳곳을 위협한 하수인들 중 한 무리로, 혼돈의 바포메트는 어둠과 사악한 기운이 가득해 이름 있는 용사들도 함부로 접근하지 못했다고 한다. 바포메트 형제는 주변의 생명체를 오염시키는 그림자 독기를 뿜어내는 것은 물론 영혼을 흡수하여 자신들의 힘으로 만들어 더 많은 파괴를 일삼았으며 사람들을 악령에 씌워 힘을 잃게 만들기도 하였다. \n\n삼형제가 재미삼아 죄 없는 이들을 상대로 힘 겨루기를 했다는 속설이 있는데, 형제 중 첫째와 둘째는 아직 미숙한 셋째와 달리 악령이 씐 사람들의 영혼을 흡수함으로써 그들을 빈사상태로 만들 수 있었다고 한다.
+    </string>
+    
+    <string name="toto_n_gugus_boss_type">1</string>
+    <string name="toto_n_gugus_level">43</string>
+    <string name="toto_n_gugus_type">
+        @string/divinity_type
+    </string>
+    <string name="toto_n_gugus_desc">
+        바위나 봉우리를 부수며 시끄럽게 구는 바야르들 때문에 불면증에 시달리던 토토가 바야르들에게 복수를 할 작정으로 온순한 구구스를 꾀어냈다.\n토토는 구구스 위에 올라타 사람들을 공격하도록 부추기고 있는데, 다행히 가면을 관찰하면 공격을 피하기 쉽다고 한다. 뜨겁고 메마른 황야에 살아서인지 화염을 내뿜거나 육중한 몸뚱이를 이용해서 사람들을 덮치는 이들의 약점은 \'가면이 벗겨진 얼굴\'이라는데…
+    </string>
+    
+    <string name="pekanos_boss_type">1</string>
+    <string name="pekanos_level">47</string>
+    <string name="pekanos_type">
+        @string/divinity_type
+    </string>
+    <string name="pekanos_desc">
+        켈베로스족에서도 가장 거칠고 흉폭다고 알려진 페카노스.\n과거 세 명의 세이지는 사악한 악마의 개 페카노스를 끝이 보이지 않는 죽음의 협곡이라 하는 상처입은 협곡에 봉인했다.\n오랜 시간이 흐른 뒤, 페리온 카카부족의 한 전사가 악마의 하수인 투르카가 퍼트린 악마의 개를 부르는 주문 \'켈베로스의 노래\'를 무심코 따라 부르다 페카노스를 깨우고 말았다.\n이에 한 젊은이가 페카노스를 상대했고, 그의 검에 페카노스는 눈을 잃고 끝없는 벼랑 끝으로 떨어졌다고 한다.\n이렇게 사라진 줄로만 알았던 페카노스가 블루 라펜타가 조각난 후 상처입은 협곡에 다시 나타나고 있다고 하는데...
+    </string>
+    
+    <string name="coldblooded_baphomet_boss_type">1</string>
+    <string name="coldblooded_baphomet_level">50</string>
+    <string name="coldblooded_baphomet_type">
+        @string/devil_type
+    </string>
+    <string name="coldblooded_baphomet_desc">
+        3명의 세이지가 메이플 월드를 수호하고 있던 옛날, 마왕의 명을 받고 세상을 혼란에 빠뜨린 바포메트 삼 형제의 첫째이다. 냉혈한 바포메트는 어둠과 냉기의 힘을 동시에 내뿜을 수 있어 나머지 두 형제를 능가하는 파괴력을 보였다고 한다.\n마왕의 하수인들 중 잔인하기로 손꼽히는 냉혈한 바포메트는 쉽게 지치거나 빈틈을 보이지 않아 삼 형제 중 전사와 영웅들의 등골을 서늘하게 만드는 가장 두려운 존재라고 한다. 
+    </string>
+    
+    <string name="ikar_madd_boss_type">1</string>
+    <string name="ikar_madd_level">50</string>
+    <string name="ikar_madd_type">
+        @string/divinity_type
+    </string>
+    <string name="ikar_madd_desc">
+        엘리니아 전체를 어둠의 기운으로 물들이려는 계략을 가진 흑요정 무리는 자신들의 흑마법을 시험해보고자, 숲에 살고 있던 용의 알 두 개를 훔쳐 어둠의 마법으로 알을 부화시켰다.\n이 중, 물의 기운을 받은 이카르 마드는 강력한 냉기 돌풍을 일으켜 주변을 모두 얼어붙게 만들었다. 흑요정들은 이카르 마드를 지키기 위해 거대한 크리스탈 안에 봉인시켜 마법사들 모르게 빼돌렸다.\n이 후 오랫동안 이카르 마드는 나타나지 않았지만, 최근 빅토리아 아일랜드 곳곳에서 갑작스러운 빙하기가 찾아오고 있다는 소문이 들려오면서, 마법사들은 이카르 마드의 부활을 조심스럽게 예측하고 있다. 
+    </string>
+    
+    <string name="trauros_boss_type">0</string>
+    <string name="trauros_level">42</string>
+    <string name="trauros_type">
+        @string/divinity_type
+    </string>
+    <string name="trauros_desc">
+        평범한 일소로 낮에는 밭을 갈고, 밤에는 발전기를 돌렸다.\n거듭되는 인간의 학대에 머물던 곳에서 도망쳐 산속으로 들어갔다\n그곳을 지나가던 마녀의 도움을 받아 직립보행이 가능하게 되었고, 이후 코로푸푸 절벽에 정착해 인간에 대한 분노를 폭력으로 분출하는 중이다.
+    </string>
+    
+    <string name="nine_cap_kappa_boss_type">0</string>
+    <string name="nine_cap_kappa_level">44</string>
+    <string name="nine_cap_kappa_type">
+        @string/machine_type
+    </string>
+    <string name="nine_cap_kappa_desc">
+        카트로닉 박사가 만든 전투형 로봇 중 하나이다.\n애초에는 개인 경호나 홈가드용으로 개발됐다. 하지만 시판되고 얼마 지나지 않아 정체를 알 수 없는 무리에 의해 개조된 상품들이 유통되었고, 개조된 로봇은 통제불가능한 폭력성을 보였다.\n급히 유통 중이던 상품들을 회수해 폐기했지만, 나인캡 카파를 비롯한 개조된 로봇 일부는 회수되지 못한 채 메이플 월드에 남아 있다.
+    </string>
+    
+    <string name="earthly_lavaknight_boss_type">0</string>
+    <string name="earthly_lavaknight_level">46</string>
+    <string name="earthly_lavaknight_type">
+        @string/beast_type
+    </string>
+    <string name="earthly_lavaknight_desc">
+        대지의 라바 나이트는 원래 단맛이 나는 열매를 주식으로 먹는 온순한 동물이었다. 마왕의 수하 중 하나인 한 최면술사는 이런 대지의 라바 나이트를 오랜 시간 흥미롭게 관찰하다 최면술을 이용해 포악하고 잔인한 육식동물로 바꿔 빅토리아 아일랜드를 공격하게 만들었다.\n시간이 흘러 점점 악마의 최면에 정신을 강하게 지배받게 된 대지의 라바 나이트는 포악해져만 갔고, 최면술사는 손이 많이 가서 피곤한 대지의 라바 나이트를 빅토리아 아일랜드에 풀어놓아 버렸다.\n아직 과거의 본능이 완전히 사라지지 않은 대지의 라바 나이트는 단 음식이 있는 곳에 자주 출몰한다고 한다. 
+    </string>
+    
+    <string name="ursca_boss_type">0</string>
+    <string name="ursca_level">48</string>
+    <string name="ursca_type">
+        @string/beast_type
+    </string>
+    <string name="ursca_desc">
+        커넬 박사는 자성을 가진 에너지가 전기와 맞닿으면 극강의 힘을 발휘한다는 사실을 연구를 통해 알아낸다. 그 힘의 크기를 실제 확인해보고 싶었던 커넬 박사는 살아있는 야생 곰을 생포하여, 여러 번의 실패 끝에 극강의 힘을 가진 일레트로닉 베어 우르스카를 탄생시킨다.\n힘을 주체할 수 없었던 우르스카는 결국 자신을 창조한 커넬 박사를 해치고, 연구소 어딘가에서 전기에너지를 흡수하며, 점점 더 강해지고 있다고 한다. 
+    </string>
+    
+    <string name="monte_de_carlo_boss_type">0</string>
+    <string name="monte_de_carlo_level">50</string>
+    <string name="monte_de_carlo_type">
+        @string/devil_type
+    </string>
+    <string name="monte_de_carlo_desc">
+        과거 트라이아 왕궁의 비밀 기사단을 이끌던 \'라울\'이라는 수장은 다중인격장애가 있었다. 가끔씩 그의 내면 깊은 곳에서 잠자고 있던 난폭하고 비열한 인격은 점점 더 라울을 고통 속으로 몰아넣었다.\n시간이 지나면서 라울 본래의 인격은 점점 더 소멸되어 갔고 난폭하고 비열한 인격이 그를 완전하게 지배하게 되었다. 이런 다중 인격들은 마왕의 힘을 빌려 각기 독립된 인격체로 탄생하게 된다.\n몬테 드 카를로는 여러 개의 자아분열체 중에서 가장 비열하고 잔인한 인격으로 알려져 있다.
+    </string>
+    
+    <string name="phantom_destroyer_boss_type">0</string>
+    <string name="phantom_destroyer_level">50</string>
+    <string name="phantom_destroyer_type">
+        @string/machine_type
+    </string>
+    <string name="phantom_destroyer_desc">
+        커닝시티에서 본격적으로 로봇 산업에 발을 들이기 전 만들어졌던 1세대 로봇이다.\n당시 로봇에 대한 기반 지식이 없었던 연구원들은 가까스로 로봇 개발에 성공했지만, 잘못된 시스템 설계로 인해 발생한 치명적 오류를 고치지 못해 애초 공사장의 가드형으로 개발되었던 로봇이 전투형 로봇이 되어 버렸다.\n오류 패턴을 분석하기 위해 팬토마 사이보그 센터로 이송시켰지만, 초기 모델이라 인공지능이 낮은 깡통 로봇이면서도 힘은 어마어마하게 세서 이곳 연구원들도 골머리를 앓고 있다고 한다.
+    </string>
+    
+    <string name="lerta_boss_type">0</string>
+    <string name="lerta_level">50</string>
+    <string name="lerta_type">
+        @string/beast_type
+    </string>
+    <string name="lerta_desc">
+        과거 신령이 깃든 신수로 불리던 켈베로스족은 세이지를 도와 어둠의 기운이 메이플 월드로 넘어오지 못하게 지키는 충직한 존재였다. 이들은 세 번의 진화 단계를 거쳐 완전한 모습의 켈베로스로 거듭나는데, 그 진화 단계를 거칠 때마다 극도의 고통을 겪는다고 한다. 레르타는 진화 바로 전 상태의 불완전 켈베로스이다. 거듭되는 극심한 고통을 겪으며 육체도 정신도 약해진 레르타는 위로가 필요했고, 격려가 필요했고, 휴식이 필요했다. 레르타는 쉴 곳을 찾아 헤매다가 인간들이 있는 메이플 월드에 모습을 드러냈지만, 사람들은 신수의 존재를 알아보지 못하고 괴물 취급을 하며 레르타를 공격하기 시작했다. 인간들에게서 깊은 상처를 받은 레르타는 프로즌 라바홀에서 숨어 지냈다.\n심연의 사제 카할라는 레르타가 지쳐있는 틈을 이용해 어둠의 기운을 불어넣어 타락한 악마 개로 만들어 버렸고, 상처로 뻥 뚫린 가슴을 안은 레르타는 잔인하고 포악하게 인간을 공격하고 있다.
+    </string>
+    
+    <string name="mark_omega_boss_type">2</string>
+    <string name="mark_omega_level">48</string>
+    <string name="mark_omega_type">
+        @string/machine_type
+    </string>
+    <string name="mark_omega_desc">
+        로봇 기술의 대가 카트로닉 박사의 모든 기술이 집약된 인공지능 로봇! \n원래 재미 삼아 소소한 도우미나 장난감 로봇을 만들던 카트로닉 박사가 무슨 연유로 이런 위험한 로봇을 개발했는지 밝혀진 바는 없다. \n카트로닉 박사는 마크 52 프로젝트가 실패한 이후 자취를 감췄고, 가장 강력하고 위험하다고 알려진 이 로봇을 트로닉스 벙커에 가뒀다. 하지만 언제 이 로봇이 잠긴 문을 부수고 뛰쳐나올지 알 수 없는 일이다.
+    </string>
+    
+    <string name="shushu_n_bubus_boss_type">2</string>
+    <string name="shushu_n_bubus_level">50</string>
+    <string name="shushu_n_bubus_type">
+        @string/divinity_type
+    </string>
+    <string name="shushu_n_bubus_desc">
+        설원에서 그 누구보다 마음이 따뜻하고 정이 많았던 슈슈는 맹독이 묻어있는 사냥꾼의 화살을 맞고 목숨이 위태로울 지경에 이르렀다.\n설원에 살고 있는 연금술사는 맹독이 몸 안에 퍼지는 것을 막기 위해서는 심장을 얼리는 방법뿐이라고 했고, 슈슈는 어쩔 수 없이 살기 위해 연금술사의 말대로 심장을 얼려버렸다.\n그 이후 순하디 순한 슈슈는 서서히 사악하게 변해가기 시작했고, 급기야 설원에서 단짝으로 지내던 거인 부부스에게도 자신의 심장에 꽂은 것과 똑같은 냉기 파편을 꽂아 둘이지만 하나인 것처럼 함께 다니며, 무자비한 악행을 저지르고 있다.
+    </string>
+    
+    <string name="forgotten_bajar_boss_type">2</string>
+    <string name="forgotten_bajar_level">50</string>
+    <string name="forgotten_bajar_type">
+        @string/spirit_type
+    </string>
+    <string name="forgotten_bajar_desc">
+        고대인의 신비로운 지혜를 품고 바야르 산맥에서 태어난 거대한 돌 거인.\n바야르 산맥이 세계 곳곳으로 흩어질 때 그는 바르보사 해안가의 얼음 동굴을 차지하게 되었다. \n그는 자신만의 공간인 차가운 얼음 동굴에 침입해 마음을 어지럽히는 인간들을 공격하고 내쫓는다. 그의 심장은 이 얼음 동굴처럼 차갑게 얼어붙은 것인지도 모른다.
+    </string>
+    
+    <string name="piros_fadd_boss_type">2</string>
+    <string name="piros_fadd_level">50</string>
+    <string name="piros_fadd_type">
+        @string/divinity_type
+    </string>
+    <string name="piros_fadd_desc">
+        엘리니아 전체를 어둠의 기운으로 물들이려는 계략을 가진 흑요정 무리는 자신들의 흑마법을 시험해보고자, 숲에 살고 있던 용의 알 두 개를 훔쳐 어둠의 마법으로 알을 부화시켰다.\n이 중, 불의 기운을 받은 피로스 파드는 거대한 불덩어리를 입에서 뿜어대며 엘리니아의 지혜의 숲을 잿더미로 만들어 버렸다.\n마법사들은 불 지옥으로 변해버린 지혜의 숲을 바람의 힘에 실어 엘리니아 지반에서 분리시켜 용암천 지대로 날려보냈고, 현재는 두 명의 요정이 피라타로스를 지키고 있다고 한다.
+    </string>
+    
+    <string name="balrog_boss_type">2</string>
+    <string name="balrog_level">50</string>
+    <string name="balrog_type">
+        @string/devil_type
+    </string>
+    <string name="balrog_desc">
+        멈추지 않는 심장을 가진 불멸의 존재!\n그의 심장은 주변의 살아있는 존재들의 피를 흡수하여 무한의 생명을 유지한다고 알려져 있다. \n오랜 기간 수련하여 높은 실력을 지닌 주술사 하타르는 발록에게 맞설 수 있는 비법이 있다고 말했지만 그것이 확실한 방법인지는 알 수 없다.
     </string>
 </resources>

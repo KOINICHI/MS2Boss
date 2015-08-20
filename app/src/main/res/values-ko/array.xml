@@ -41,6 +41,7 @@
         <item>revenant_zombie</item>
         <item>urza</item>
         <item>jirant</item>
+        
         <item>mano</item>
         <item>windrunner_lapeng</item>
         <item>summoner_latoon</item>
@@ -58,5 +59,22 @@
         <item>papulatus</item>
         <item>horus</item>
         <item>chaos_baphomet</item>
+        
+        <item>toto_n_gugus</item>
+        <item>pekanos</item>
+        <item>coldblooded_baphomet</item>
+        <item>ikar_madd</item>
+        <item>trauros</item>
+        <item>nine_cap_kappa</item>
+        <item>earthly_lavaknight</item>
+        <item>ursca</item>
+        <item>monte_de_carlo</item>
+        <item>phantom_destroyer</item>
+        <item>lerta</item>
+        <item>mark_omega</item>
+        <item>shushu_n_bubus</item>
+        <item>forgotten_bajar</item>
+        <item>piros_fadd</item>
+        <item>balrog</item>
     </string-array>
 </resources>
