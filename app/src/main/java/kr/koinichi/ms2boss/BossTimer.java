@@ -11,6 +11,7 @@ import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.os.Build;
 import android.os.Handler;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
@@ -210,6 +211,7 @@ public class BossTimer extends AppCompatActivity {
     public void displayAdapter() {
         int new_sort_by = Integer.parseInt(sp.getString("pref_sort_by", "1"));
         int new_time_format = Integer.parseInt(sp.getString("pref_time_format", "1"));
+        //Log.d("KOINICHI", String.format("%d,%d  %d,%d",sort_by,new_sort_by,time_format,new_time_format));
         boolean forceUpdateList = ((new_sort_by != sort_by) || (new_time_format != time_format));
         sort_by = new_sort_by;
         time_format = new_time_format;
@@ -249,6 +251,7 @@ public class BossTimer extends AppCompatActivity {
         StringBuilder sb = new StringBuilder();
         sb.append(noti_before);
         sb.append(getString(R.string.minutes_later));
+        sb.append(" : ");
         sb.append(getString(R.string.noti_message));
         sb.append(" \n");
         for (int i = 0; i < bosses.size(); i++) {
@@ -270,7 +273,7 @@ public class BossTimer extends AppCompatActivity {
                     Intent.FLAG_ACTIVITY_NEW_TASK);
             PendingIntent contentintent = PendingIntent.getActivity(this, 0, intent, 0);
 
-            Notification noti = new Notification.Builder(getContext())
+            NotificationCompat.Builder noti = new NotificationCompat.Builder(getContext())
                     .setContentTitle(getString(R.string.noti_title))
                     .setSmallIcon(R.drawable.noti_icon)
                     .setWhen(System.currentTimeMillis())
@@ -279,10 +282,9 @@ public class BossTimer extends AppCompatActivity {
                     .setDefaults(Notification.DEFAULT_LIGHTS)
                     .setSound(Settings.System.DEFAULT_NOTIFICATION_URI)
                     .setAutoCancel(true)
-                    .setStyle(new Notification.BigTextStyle().bigText(sb.toString()))
-                    .build();
+                    .setStyle(new NotificationCompat.BigTextStyle().bigText(sb.toString()));
             NotificationManager nm = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-            nm.notify(0, noti);
+            nm.notify(0, noti.build());
         }
     }
 

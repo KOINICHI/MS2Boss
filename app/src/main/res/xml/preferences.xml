@@ -24,7 +24,7 @@
     <PreferenceCategory
         android:key="about"
         android:title="About">
-        <Preference android:title="Version" android:summary="0.1.3" />
+        <Preference android:title="Version" android:summary="0.1.3.1" />
         <Preference android:title="Made By" android:summary="@string/cheesemochi" />
     </PreferenceCategory>
 </PreferenceScreen>

@@ -110,7 +110,7 @@
     <string name="phantom_destroyer">Phantom Destroyer</string>
     <string name="phantom_destroyer_loc">Phentoma Cyborg Center</string>
     <string name="lerta">Lerta</string>
-    <string name="lerta_loc">Frozen Larva Hole</string>
+    <string name="lerta_loc">Frozen Lara Hole</string>
     <string name="mark_omega">Mark52 Omega</string>
     <string name="mark_omega_loc">Tronix Bunker</string>
     <string name="shushu_n_bubus">Shushu and Bubus</string>
@@ -127,7 +127,7 @@
     <string name="pref_time_format">Time Format</string>
     <string name="pref_noti_delay">Notify In</string>
     <string name="pref_noti_delay_sum">minutes before</string>
-    <string name="noti_message">, the following bosses will appear :</string>
+    <string name="noti_message">the following bosses will appear :</string>
     <string name="minutes_later">" mins"</string>
     <string name="minutes_before">"m ago"</string>
     <string name="minutes_later_singular">" min"</string>
